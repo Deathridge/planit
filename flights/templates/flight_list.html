@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+
+<ul> 
+{% for object in object_list %}
+<div class="well">
+<p>FlightCode: {{ object.FlightCode }}</p>
+<p>DepartureDate: {{ object.DepartureDate }}</p>
+<p>DepartureTime: {{ object.DepartureTime }}</p>
+<p>ArrivalTime: {{ object.ArrivalTime }}</p>
+<p>DepartureLocation: {{ object.DepartureLocation }}</p>
+<p>ArrivalLocation: {{ object.ArrivalLocation }}</p>
+<p>
+&nbsp
+</p>
+</div>
+{% endfor %}
+</ul>
+</div>
+
+{% endblock %}

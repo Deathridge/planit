@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Planit</title>
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="{% static "js/moment.min.js" %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+
+    <link href= "{% static "css/sample.css" %}" rel="stylesheet">
+    
+  </head>
+
+  <body>
+  <div class="main">
+    <div class="container-fluid">
+      <div class="row header">
+        <h1>Planit</h1>
+      </div>
+      
+       
+        {% block content %}{% endblock %}
+      
+      
+      
+    <footer class="footer">
+      <p>&copy; Planit 2015</p>
+    </footer>
+
+    </div>
+
+    
+    </div>
+  </body>
+</html>
