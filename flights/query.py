@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 from geopy import *
-import pytz
+import pytz, math
 
 def scrapeflight(flightcode, date):
     opener = urllib2.build_opener()
@@ -29,7 +29,7 @@ def scrapeflight(flightcode, date):
                 Time = str(time)
                 Time = re.findall("\>(.*?)\<", Time)
                 if (t==0):
-                    FromTimezone = int(float(Lonfrom) * 24/360) + 1                    
+                    FromTimezone = int(round(float(Lonfrom) * 24/360,0))                    
                     
                     DepartureTime = datetime.strptime(Time[0], "%H:%M")
                  
@@ -41,8 +41,8 @@ def scrapeflight(flightcode, date):
                         timezd = FromTimezone + DepartureTime.hour    
                     DepartureTime = DepartureTime.replace(hour = timezd,minute = DepartureTime.minute)
                 elif (t==2):                    
-                    ToTimezone = int(float(LonTo) * 24/360)
-                    
+                    ToTimezone = int(round(float(LonTo) * 24/360,0))                     
+                    print ToTimezone
                     ArrivalTime = datetime.strptime(Time[0], "%H:%M")
                     
                     if(ToTimezone + ArrivalTime.hour > 23):
@@ -55,3 +55,7 @@ def scrapeflight(flightcode, date):
 
                 t=t+1
     return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime]
+
+
+
+

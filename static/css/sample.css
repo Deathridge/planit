@@ -16,6 +16,11 @@
       color: #ffffff;
   }
   
+  .well {
+      width: 25%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+  }
   
 }
 @media (max-width: 768px){
@@ -35,6 +40,8 @@
   label {
       color: #ffffff;
   }
+
+  
   
 }
 
@@ -42,7 +49,7 @@
 .row {
   
     text-align: center;
-    vertical-align: middle;
+    
   
 }
 
@@ -60,6 +67,7 @@
 
 .row {
     margin: 40px 0px;    
+    vertical-align: middle;    
 }
 
 .container-fluid {
@@ -94,4 +102,21 @@
 
 p {
   color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.form-control {
+  text-align: center;
+}
+
+.datepicker {
+  border-radius: 5px;
+  text-align: center;
+}
+
+#flightcode {
+  margin-left: 30%;
+  margin-right: 30%;
 }

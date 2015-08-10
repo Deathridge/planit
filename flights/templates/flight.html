@@ -1,19 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="well">
+
 	<!--<div class="row add">-->
     	<form class="form-group" action="{% url 'main' %}" method="POST" style="position:relative">
         	{% csrf_token %}
-        	<div class="row-md-2">
+        	<p>
+        	Flight Code: 	
+        	</p>
+        	<div class="row" id="flightcode">
         	{{ form.FlightCode }}   
-        	</div> 
+        	</div>        	
         	<div>
         	&nbsp
-        	</div>
-        	<div class="row-md-2">
-        	{{ form.DepartureDate }}   
         	</div> 
+        	<p>
+        	Departure Date: 	
+        	</p>       	
+        	<div class="row">
+        	{{ form.DepartureDate }}   
+        	</div>         	
         	<div>
         	&nbsp
         	</div>       	
@@ -21,6 +28,7 @@
         	<!--<input type="submit" name ="Add" value ="Add"></input>-->
     	</form>
 	<!-- </div> -->
+
 </div>
 	<script type="text/javascript">
     	$(function () {

@@ -6,15 +6,12 @@
 <ul> 
 {% for object in object_list %}
 <div class="well">
-<p>FlightCode: {{ object.FlightCode }}</p>
-<p>DepartureDate: {{ object.DepartureDate }}</p>
-<p>DepartureTime: {{ object.DepartureTime }}</p>
-<p>ArrivalTime: {{ object.ArrivalTime }}</p>
-<p>DepartureLocation: {{ object.DepartureLocation }}</p>
-<p>ArrivalLocation: {{ object.ArrivalLocation }}</p>
-<p>
-&nbsp
-</p>
+<p>Flight Code: {{ object.FlightCode }}</p>
+<p>Departure Date: {{ object.DepartureDate }}</p>
+<p>Departure Time: {{ object.DepartureTime }}</p>
+<p>Arrival Time: {{ object.ArrivalTime }}</p>
+<p>Departure Location: {{ object.DepartureLocation }}</p>
+<p>Arrival Location: {{ object.ArrivalLocation }}</p>
 </div>
 {% endfor %}
 </ul>
