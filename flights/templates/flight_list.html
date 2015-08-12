@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container-fluid" onload="JavaScript:timedRefresh(20000);">
-
+<div class="container-fluid">
+<div class="flights"  onload="JavaScript:timedRefresh(20000);">
 <ul > 
 {% for object in object_list %}
 <div class="well">
@@ -16,5 +16,5 @@
 {% endfor %}
 </ul>
 </div>
-
+</div>
 {% endblock %}
