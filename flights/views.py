@@ -44,4 +44,4 @@ class FlightListView(ListView):
 def flights_refresh(request):
 	flights = Flight.objects.all()
 
-	return render(request, 'flight_list.html', {'object_list': flights})
+	return render(request, 'flight_table.html', {'object_list': flights})

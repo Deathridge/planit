@@ -7,4 +7,4 @@ setInterval(function(){
     	}
     })
     
-}, 5000)
+}, 20000)
