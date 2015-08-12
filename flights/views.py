@@ -41,3 +41,8 @@ class FlightListView(ListView):
 	model = Flight
 	template_name = os.path.join(BASE_DIR, 'flights/templates/flight_list.html')
 	
+def flights_refresh(request):
+	if request.method == "GET":
+		flights = Flight.objects.get()
+
+		return render(request, 'flight_list.html' {'object': flights})
