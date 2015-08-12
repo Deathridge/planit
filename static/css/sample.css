@@ -21,6 +21,15 @@
       margin: 0 auto;
       margin-bottom: 20px;
   }
+
+
+  .main { 
+  background: url(../images/earth-from-space.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
   
 }
 @media (max-width: 768px){
@@ -41,7 +50,13 @@
       color: #ffffff;
   }
 
-  
+  .main { 
+  background: url(../images/earth-from-space.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
   
 }
 
@@ -74,23 +89,6 @@
   text-align: center;  
 }
 
-.main {
-  
-  /*background: -webkit-linear-gradient(top, #fafcfd, #C0C0C0) !important; /* For Safari 5.1 to 6.0 */
-  /*background: -o-linear-gradient(top, #fafcfd, #C0C0C0) !important; /* For Opera 11.1 to 12.0 */
-  /*background: -moz-linear-gradient(top, #fafcfd, #C0C0C0) !important; /* For Firefox 3.6 to 15 */
-  /*background: linear-gradient(top, #fafcfd, #C0C0C0) !important; /* Standard syntax */
-  /*background: -ms-linear-gradient(top, #fafcfd, #C0C0C0) !important; /* IE10+ */
-  /*background: transparent;*/
-  
-  background: -webkit-linear-gradient(top, #000000, #000000) !important; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, #000000, #000000) !important; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, #000000, #000000) !important; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(top, #000000, #000000) !important; /* Standard syntax */
-  background: -ms-linear-gradient(top, #000000, #000000) !important; /* IE10+ */
-  background: transparent;
-  
-}
 
 .well {
   background-color: #1a1a1a;
@@ -119,4 +117,12 @@ p {
 #flightcode {
   margin-left: 30%;
   margin-right: 30%;
+}
+
+/* Flatten das boostrap */
+.well, .navbar-inner, .popover, .btn, .tooltip, input, select, textarea, pre, .progress, .modal, .add-on, .alert, .table-bordered, .nav>.active>a, .dropdown-menu, .tooltip-inner, .badge, .label, .img-polaroid {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  
 }
