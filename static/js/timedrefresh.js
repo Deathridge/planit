@@ -1,7 +1,7 @@
 // Refresh the Table every 5 seconds
 setInterval(function(){
     $.ajax({    
-       url: "{% url 'flights-detail' %}",
+       url: "/flights",
           success: function(data) {
           $('#flights').html(data);
           }
