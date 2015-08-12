@@ -3,8 +3,9 @@
     max-width: 90%;
 
   }
-  .navbar-brand {
+  a.navbar-brand {
       color: #ffffff;
+      font-weight: bold;
       text-align: left;
   }
   h2 {
@@ -40,8 +41,9 @@
     max-width: 90%;
 
   }
-  .navbar-brand {
+  a.navbar-brand {
       color: #ffffff;
+      font-weight: bold;
       text-align: left;
   }
   h2 {
