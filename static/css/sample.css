@@ -5,6 +5,7 @@
   }
   h1 {
       color: #ffffff;
+      text-align: left;
   }
   h2 {
       font-size: 1.5vw !important ;
@@ -41,6 +42,7 @@
   }
   h1 {
       color: #ffffff;
+      text-align: left;
   }
   h2 {
       font-size: 3.2vw !important ;
@@ -130,6 +132,3 @@ p {
   font-weight: bold;
 }
 
-title {
-  text-align: left;
-}
