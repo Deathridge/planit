@@ -1,4 +1,5 @@
 // Refresh the Table every 5 seconds
 setInterval(function(){
-   $("#flights").load();
+    $('#flights').load("/");
+    
 }, 5000)
