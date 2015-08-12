@@ -23,13 +23,13 @@
   }
 
 
-  .main { 
+  html, body { 
   background: url(../images/earth-from-space.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   }
   
@@ -52,13 +52,13 @@
       color: #ffffff;
   }
 
-  .main { 
+  html, body { 
   background: url(../images/earth-from-space.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   }
   
