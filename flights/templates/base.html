@@ -16,13 +16,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="{% static "js/moment.min.js" %}"></script>
+    <script src="{% static "js/timedrefresh.js" %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
 
     <link href= "{% static "css/sample.css" %}" rel="stylesheet">
     
   </head>
 
-  <body>
+  <body onload="JavaScript:timedRefresh(5000);">
   <div class="main">
     <div class="container-fluid">
       <div class="row header">
