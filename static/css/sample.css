@@ -3,7 +3,7 @@
     max-width: 90%;
 
   }
-  h1 {
+  .navbar-brand {
       color: #ffffff;
       text-align: left;
   }
@@ -40,7 +40,7 @@
     max-width: 90%;
 
   }
-  h1 {
+  .navbar-brand {
       color: #ffffff;
       text-align: left;
   }
