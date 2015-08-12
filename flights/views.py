@@ -41,4 +41,3 @@ class FlightListView(ListView):
 	model = Flight
 	template_name = os.path.join(BASE_DIR, 'flights/templates/flight_list.html')
 	
-
