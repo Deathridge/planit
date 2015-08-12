@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from flights.views import flights_main
+from flights.views import flights_main, flights_refresh
 from django.conf import settings
 from django.conf.urls.static import static
 from flights.views import FlightListView
