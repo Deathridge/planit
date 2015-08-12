@@ -76,6 +76,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
 )
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.app_directories.load_template_source',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
