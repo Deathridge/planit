@@ -130,3 +130,7 @@ p {
   box-shadow: none !important;
   
 }
+
+.navbar .active {
+  font-weight: bold;
+}
