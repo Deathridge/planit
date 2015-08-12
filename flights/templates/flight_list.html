@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container-fluid" >
+<div class="container-fluid" onload="JavaScript:timedRefresh(20000);">
 
-<ul onload="JavaScript:timedRefresh(20000);"> 
+<ul > 
 {% for object in object_list %}
 <div class="well">
 <p>Flight Code: {{ object.FlightCode }}</p>
