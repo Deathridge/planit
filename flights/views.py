@@ -45,4 +45,4 @@ def flights_refresh(request):
 	if request.method == "GET":
 		flights = Flight.objects.get()
 
-		return render(request, 'flight_list.html' {'object': flights})
+		return render(request, 'flight_list.html', {'object': flights})
