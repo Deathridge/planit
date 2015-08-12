@@ -3,7 +3,7 @@ setInterval(function(){
     $.ajax({
     	url: 'r',
     	success: function(data){
-    		$('.flights').load(data)
+    		$('.flights').replaceWith(data)
     	}
     })
     
