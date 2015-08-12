@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="well">
+<div class="well" onload="JavaScript:timedRefresh(5000);">
 
 	<!--<div class="row add">-->
     	<form class="form-group" action="{% url 'main' %}" method="POST" style="position:relative">
@@ -35,6 +35,8 @@
         	$('.datepicker').datepicker();
         		
     	});
-           
+    	function timedRefresh(timeoutPeriod)  {
+        	setTimeout("location.reload(true);",timeoutPeriod);   
+        }
 	</script>
 {% endblock %}
