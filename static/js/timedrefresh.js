@@ -1,4 +1,4 @@
-// Refresh the Table every 5 seconds
+// Refresh the Table every 500 millseconds
 setInterval(function(){
     $.ajax({
     	url: 'r',
@@ -7,4 +7,4 @@ setInterval(function(){
     	}
     })
     
-}, 20000)
+}, 500)
