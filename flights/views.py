@@ -9,6 +9,7 @@ from .forms import SubmitFlight
 from .models import Flight
 from django.core.exceptions import ValidationError
 from .query import scrapeflight
+from django.contrib import messages
 
 def flights_main(request):
 	form = SubmitFlight()
@@ -21,14 +22,19 @@ def flights_main(request):
 			FlightCode = form.cleaned_data['FlightCode']
 			DepartureDate = form.cleaned_data['DepartureDate']
 			data = scrapeflight(str(FlightCode), str(DepartureDate))
-			DepartureTime = data[4]
-			ArrivalTime = data[5]
-			DepartureLocation = data[2]
-			ArrivalLocation = data[3]
+			if (data[6] == 2):
+				DepartureTime = data[4]
+				ArrivalTime = data[5]
+				DepartureLocation = data[2]
+				ArrivalLocation = data[3]
 			
 
-			flight = Flight(FlightCode=FlightCode,DepartureDate=DepartureDate,DepartureTime=DepartureTime,ArrivalTime=ArrivalTime, DepartureLocation=DepartureLocation,ArrivalLocation=ArrivalLocation)
-			flight.save()
+				flight = Flight(FlightCode=FlightCode,DepartureDate=DepartureDate,DepartureTime=DepartureTime,ArrivalTime=ArrivalTime, DepartureLocation=DepartureLocation,ArrivalLocation=ArrivalLocation)
+				flight.save()
+			elif (data[6] == 0):
+				messages.add_message(request, messages.ERROR, 'Invalid FlightCode')
+			elif (data[6] == 1):
+				messages.add_message(request, messages.ERROR, 'No flight on data provided')
 
 	else:
 

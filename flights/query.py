@@ -10,7 +10,7 @@ def scrapeflight(flightcode, date):
     opener = urllib2.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     g = geocoders.GoogleV3()
-    query = flightcode
+    query = flightcode.replace(" ", "")
     response = opener.open( 'http://www.flightradar24.com/data/flights/' + query ).read()
 
     page = BeautifulSoup(response,'html.parser')
@@ -54,7 +54,15 @@ def scrapeflight(flightcode, date):
                     ArrivalTime = ArrivalTime.replace(hour = timeza,minute = ArrivalTime.minute)
 
                 t=t+1
-    return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime]
+
+    if (DepartureLocation is null):
+        Statuscode = 0
+    elif (DepartureTime is null):
+        Statuscode = 1
+    else:
+        Statuscode = 2
+        
+    return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime, Statuscode]
 
 
 
