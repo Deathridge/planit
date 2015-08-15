@@ -73,7 +73,8 @@ DATABASES = {
 }
 
 DATABASES['default'] =  dj_database_url.config()
-
+# Enable Connection Pooling
+DATABASES['default']['ENGINE'] = 'django_postgrespool'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
