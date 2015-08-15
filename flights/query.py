@@ -55,9 +55,9 @@ def scrapeflight(flightcode, date):
 
                 t=t+1
 
-    if (DepartureLocation not in locals()):
+    if ('DepartureLocation' not in locals()):
         Statuscode = 0
-    elif (DepartureTime not in locals()):
+    elif ('DepartureTime' not in locals()):
         Statuscode = 1
     else:
         Statuscode = 2
