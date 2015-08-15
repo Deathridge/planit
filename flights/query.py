@@ -59,8 +59,8 @@ def scrapeflight(flightcode, date):
         Statuscode = 0
         DepartureLocation = "Invalid"
         ArrivalLocation = "Invalid"
-        DepartureTime = date.date.today()
-        ArrivalTime = date.date.today()
+        DepartureTime = date.time.Now()
+        ArrivalTime = date.time.Now()
     elif ('DepartureTime' not in locals()):
         Statuscode = 1
         DepartureTime = datetime.date.today()
