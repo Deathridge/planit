@@ -34,12 +34,12 @@
 
   .flights {
     float: right;
-    width: 40%;
+    width: 60%;
   }
 
   .flight-form {
     float: left;
-    width: 60%;
+    width: 40%;
   }
 }
 @media (max-width: 768px){
