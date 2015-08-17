@@ -33,13 +33,13 @@
   
 
   .flights {
-    float: left;
-    width: auto;
+    float: right;
+    width: 40%;
   }
 
   .flight-form {
-    float: right;
-    width: auto;
+    float: left;
+    width: 60%;
   }
 }
 @media (max-width: 768px){
