@@ -34,14 +34,14 @@
 
   .flights {
     margin-right: 20px;
-    float: right;
+    float: center;
     width: 40%;
   }
 
   .flight-form {
     margin-left: 20px;
     float: left;
-    width: 20%;
+    width: 30%;
     position: fixed;
     top: 150px;
   }
