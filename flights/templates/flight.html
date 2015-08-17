@@ -1,7 +1,8 @@
-{% load staticfiles %}
-<link href= "{% static "css/sample.css" %}" rel="stylesheet">
 {% extends 'base.html' %}
-
+{% load staticfiles %}
+{% block styles %}
+<link href= "{% static "css/sample.css" %}" rel="stylesheet">
+{% endblock %}
 {% block content %}
 
 <div class="flight-form">
