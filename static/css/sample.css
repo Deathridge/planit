@@ -78,6 +78,8 @@
 
   .flight-form {    
     width: 100%;
+    position: fixed;
+    top: 20px;
   }
   
 }
