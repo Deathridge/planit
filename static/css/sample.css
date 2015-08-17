@@ -37,13 +37,11 @@
   
 
   .flights {
-    position: absolute;
-    right: 0px;
+    float: left;
   }
 
   .form-group {
-    position: absolute;
-    left: 0px;
+    float: right;
   }
 }
 @media (max-width: 768px){
