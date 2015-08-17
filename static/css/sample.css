@@ -35,6 +35,14 @@
   margin: 0;
   }
   
+
+  .flights {
+    horizontal-align: right;
+  }
+
+  .form-group {
+    horizontal-align: left;
+  }
 }
 @media (max-width: 768px){
   .container-fluid {
