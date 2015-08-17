@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="well">
-    <div class="flight-form">
+<div class="container-fluid">
+<div class="flight-form">
+    <div class="well">
 	<!--<div class="row add">-->
     	<form class="form-group" action="{% url 'main' %}" method="POST" style="position:relative">
         	{% csrf_token %}
@@ -38,6 +39,7 @@
     {% endfor %}
 </ul>
 {% endif %}
+</div>
 </div>
 </div>
 
