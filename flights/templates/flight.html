@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container-fluid">
 <div class="flight-form">
     <div class="well">
 	<!--<div class="row add">-->
@@ -41,9 +40,9 @@
         {% endif %}
     </div>
 </div>
-</div>
 
-<div class="container-fluid">
+
+
 <div class="flights" >
 <ul > 
 {% for object in object_list %}
@@ -58,7 +57,7 @@
 {% endfor %}
 </ul>
 </div>
-</div>
+
 
 	<script type="text/javascript">
     	$(function () {
