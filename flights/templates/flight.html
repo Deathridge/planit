@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="well">
-
+    <div class="flight-form">
 	<!--<div class="row add">-->
     	<form class="form-group" action="{% url 'main' %}" method="POST" style="position:relative">
         	{% csrf_token %}
@@ -27,7 +27,7 @@
         	<button type="submit" class="btn btn-primary btn-large" name = "Add" value ="Add" style="position:relative">Add</button>
         	<!--<input type="submit" name ="Add" value ="Add"></input>-->
     	</form>
-	<!-- </div> -->
+	<!-- </div> -->    
 {% if messages %}
 <ul class="messages">
     {% for message in messages %}
@@ -38,6 +38,7 @@
     {% endfor %}
 </ul>
 {% endif %}
+</div>
 </div>
 
 <div class="container-fluid">
