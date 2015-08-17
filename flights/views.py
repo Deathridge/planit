@@ -34,7 +34,7 @@ def flights_main(request):
 			elif (data[6] == 0):
 				messages.add_message(request, messages.ERROR, 'Invalid FlightCode')
 			elif (data[6] == 1):
-				messages.add_message(request, messages.ERROR, 'No flight on data provided')
+				messages.add_message(request, messages.ERROR, 'No flight data for provided date')
 
 	else:
 
