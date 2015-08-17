@@ -37,10 +37,10 @@ def flights_main(request):
 				messages.add_message(request, messages.ERROR, 'No flight data for provided date')
 
 	else:
-
+		flights = Flight.objects.all()
 		form = SubmitFlight()
 
-	return render(request, 'flight.html', {'form': form})
+	return render(request, 'flight.html', {'form': form, 'object_list': flights})
 
 class FlightListView(ListView):
 
