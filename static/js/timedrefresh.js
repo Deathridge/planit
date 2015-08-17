@@ -1,7 +1,7 @@
 // Refresh the Table every 500 millseconds
 setInterval(function(){
     $.ajax({
-    	url: 'r',
+    	url: 'flights/r',
     	success: function(data){
     		$('.flights').replaceWith(data)
     	}
