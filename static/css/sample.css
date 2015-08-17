@@ -71,6 +71,14 @@
   min-height: 100%;
   margin: 0;
   }
+
+  .flights {    
+    width: 100%;
+  }
+
+  .flight-form {    
+    width: 100%;
+  }
   
 }
 
