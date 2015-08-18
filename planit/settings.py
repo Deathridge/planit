@@ -12,8 +12,10 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_PATH_flights = os.path.join(BASE_DIR, 'flights/templates')
+TEMPLATE_PATH_planner = os.path.join(BASE_DIR, 'planner/templates')
 TEMPLATE_DIRS = (
     TEMPLATE_PATH_flights,
+    TEMPLATE_PATH_planner,
 )
 
 
