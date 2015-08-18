@@ -4,5 +4,5 @@ from django.core.urlresolvers import reverse
 import requests, random, string, os,sys
 from planit.settings import BASE_DIR
 
-def planner(requests):
+def planner(request):
 	return render(request, 'planner.html')
