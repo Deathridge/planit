@@ -8,3 +8,9 @@ setInterval(function(){
     })
     
 }, 500)
+
+$('#form').submit(function(e){
+    $.post('', $(this).serialize(), function(data){                
+    });
+    e.preventDefault();
+});
