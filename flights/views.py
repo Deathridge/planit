@@ -36,6 +36,8 @@ def flights_main(request):
 			elif (data[6] == 1):
 				messages.add_message(request, messages.ERROR, 'No flight data for provided date')
 
+			
+
 	else:
 		
 		form = SubmitFlight()

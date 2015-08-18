@@ -5,7 +5,7 @@
 <div class="flight-form">
     <div class="well">
 	<!--<div class="row add">-->
-    	<form class="form-group" action="" method="POST" style="position:relative">
+    	<form id="flightform" class="form-group" action="" method="POST" style="position:relative">
         	{% csrf_token %}
         	<p>
         	Flight Code: 	
@@ -25,7 +25,7 @@
         	<div>
         	&nbsp
         	</div>       	
-        	<button type="submit" class="btn btn-primary btn-large" name = "Add" value ="Add" style="position:relative" onclick="flightSubmit();">Add</button>
+        	<button type="submit" class="btn btn-primary btn-large" name = "Add" value ="Add" style="position:relative" >Add</button>
         	<!--<input type="submit" name ="Add" value ="Add"></input>-->
     	</form>
 	<!-- </div> -->    
