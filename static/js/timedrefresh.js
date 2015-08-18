@@ -16,7 +16,12 @@ $(document).ready(function() {
                 type: $(this).attr('method'), // GET or POST
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
-                    //$('#flight-form').html(response); // update the DIV
+                    $.ajax({
+    					url: 'flights/r',
+    					success: function(data){
+    						$('.flights').replaceWith(data)
+    					}
+    				})
                 }
             });
             return false;
