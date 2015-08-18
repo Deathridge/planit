@@ -7,6 +7,7 @@ $(document).ready(function() {
                 type: $(this).attr('method'), // GET or POST
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
+                	alert("Submitted!");
                     $.ajax({
     					url: 'r',
     					success: function(data){
