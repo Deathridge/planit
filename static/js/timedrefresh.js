@@ -1,13 +1,4 @@
 // Refresh the Table every 500 millseconds
-setInterval(function(){
-    $.ajax({
-    	url: 'flights/r',
-    	success: function(data){
-    		$('.flights').replaceWith(data)
-    	}
-    })
-    
-}, 500)
 
 $(document).ready(function() {
         $('#flightform').submit(function() { // catch the form's submit event
@@ -17,7 +8,7 @@ $(document).ready(function() {
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
                     $.ajax({
-    					url: 'flights/r',
+    					url: 'r',
     					success: function(data){
     						$('.flights').replaceWith(data)
     					}
