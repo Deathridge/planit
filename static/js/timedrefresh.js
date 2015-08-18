@@ -7,14 +7,14 @@ $(document).ready(function() {
                 type: $(this).attr('method'), // GET or POST
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
-                	$('#message-alert').replaceWith("Submitted!")
+                	
                     $.ajax({
     					url: 'r',
     					success: function(data){
     						$('.flights').replaceWith(data)
     					}
     				})
-    				$('#message-alert').replaceWith("")
+
                 }
             });
             return false;
