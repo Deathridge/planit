@@ -39,6 +39,7 @@ def flights_main(request):
 	else:
 		
 		form = SubmitFlight()
+	
 	flights = Flight.objects.all()
 	return render(request, 'flight.html', {'form': form, 'object_list': flights})
 

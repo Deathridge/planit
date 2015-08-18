@@ -9,8 +9,16 @@ setInterval(function(){
     
 }, 500)
 
-$('#form').submit(function(e){
-    $.post('', $(this).serialize(), function(data){                
-    });
-    e.preventDefault();
-});
+function flightSubmit(){
+    var dataString = '&flightcode=' + $('input[id=flightcode]').val() +
+                     '&departuredate=' + $('input[id=departuredate]').val() +
+    $.ajax({
+        type: "POST",
+        url: "",
+        data: dataString,
+        success: function(data) {
+            alert(data);
+        }   
+     }); 
+     return false;   
+}
