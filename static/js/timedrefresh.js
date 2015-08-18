@@ -14,6 +14,7 @@ $(document).ready(function() {
     						$('.flights').replaceWith(data)
     					}
     				})
+    				$('#message-alert').replaceWith("")
                 }
             });
             return false;
