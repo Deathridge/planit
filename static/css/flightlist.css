@@ -32,18 +32,6 @@
   }
   
 
-  .flights {
-    margin-right: auto;    
-    float: right;
-    width: 40%;
-  }
-
-  .flight-form {    
-    float: left;
-    width: 30%;
-    position: fixed;
-    top: 150px;
-  }
 }
 @media (max-width: 768px){
   .container-fluid {
@@ -74,15 +62,7 @@
   min-height: 100%;
   margin: 0;
   }
-
-  .flights {    
-    width: 100%;
-  }
-
-  .flight-form {    
-    width: 100%;
-
-  }
+ 
   
 }
 
@@ -135,17 +115,10 @@ p {
   text-align: center;
 }
 
-.datepicker {
-  border-radius: 5px;
-  text-align: center;
-}
-
 #flightcode {
   margin-left: 30%;
   margin-right: 30%;
 }
-
-/* Flatten das boostrap */
 
 
 .navbar .active {
