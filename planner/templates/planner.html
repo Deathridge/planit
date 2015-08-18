@@ -10,7 +10,8 @@
 
     	$('#calendar').fullCalendar({
         	dayClick: function() {
-        		alert('a day has been clicked!');
+        		
+        		$('#calendar').fullCalendar('next');
     		}
     	})
 
@@ -19,7 +20,4 @@
 
 <div id='calendar'></div>
 
-<script type="text/javascript">
-	$('#calendar').fullCalendar('next');
-</script>
 {% endblock %}
