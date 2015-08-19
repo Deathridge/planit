@@ -9,7 +9,7 @@
     		weekMode: 'liquid',
     		selectable: true,
 			selectHelper: true,
-			height: 50%,
+			height: 500,
 				/*
 					when user select timeslot this option code will execute.
 					It has three arguments. Start,end and allDay.
