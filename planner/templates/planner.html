@@ -3,60 +3,10 @@
 {% block content %}
 
 
-<script type="text/javascript">
-    $(document).ready(function() {
 
-    // page is now ready, initialize the calendar...
+<div class="container-fluid">
 
-    	var calendar = $('#calendar').fullCalendar(
-    	{
-        	editable: true,
-    		weekMode: 'liquid',
-    		selectable: true,
-			selectHelper: true,
-				/*
-					when user select timeslot this option code will execute.
-					It has three arguments. Start,end and allDay.
-					Start means starting time of event.
-					End means ending time of event.
-					allDay means if events is for entire day or not.
-				*/
-			select: function(start, end, allDay)
-			{
-					/*
-						after selection user will be promted for enter title for event.
-					*/
-				var title = prompt('Event Title:');
-					/*
-						if title is enterd calendar will add title and event into fullCalendar.
-					*/
-				if (title)
-				{
-					calendar.fullCalendar('renderEvent',
-						{
-							title: title,
-							start: start,
-							end: end,
-							allDay: allDay
-						},
-						true // make the event "stick"
-					);
-				}
-				calendar.fullCalendar('unselect');
-			},
-
-    	})
-
-    	$('#calendar').fullCalendar({
-        	dayClick: function() {
-        		
-        		$('#calendar').fullCalendar('next');
-    		}
-    	})
-
-	});   	
-</script>
-
-<div id='calendar'></div>
+    <div id='calendar'></div>
+</div>
 
 {% endblock %}
