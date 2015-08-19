@@ -9,6 +9,7 @@
     		weekMode: 'liquid',
     		selectable: true,
 			selectHelper: true,
+			height: 50%,
 				/*
 					when user select timeslot this option code will execute.
 					It has three arguments. Start,end and allDay.
@@ -44,11 +45,5 @@
 
     	})
 
-    	$('#calendar').fullCalendar({
-        	dayClick: function() {
-        		
-        		$('#calendar').fullCalendar('next');
-    		}
-    	})
-
+    	
 	});   	
