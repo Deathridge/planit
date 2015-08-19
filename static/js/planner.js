@@ -5,7 +5,7 @@
 
     	var calendar = $('#calendar').fullCalendar(
     	{
-        	editable: true,
+        	defaultView: 'agendaWeek',
     		weekMode: 'liquid',
     		selectable: true,
 			selectHelper: true,
@@ -39,6 +39,8 @@
 				}
 				calendar.fullCalendar('unselect');
 			},
+
+			editable: true,
 
     	})
 
