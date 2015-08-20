@@ -58,6 +58,6 @@ def flights_refresh(request):
 
 def events_json(request):
 	flights = Flight.objects.all()
-	json_flights = serializers.serialize('json', [flights,])
+	json_flights = serializers.serialize('json', flights)
 
 	return HttpResponse(json_flights, mimetype='application/json')
