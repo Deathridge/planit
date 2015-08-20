@@ -2,9 +2,7 @@
     $(document).ready(function() {
 
     // page is now ready, initialize the calendar...
-    	eventRender: function(event, element) {
-            $(element).addTouch();
-        }
+
     	var calendar = $('#calendar').fullCalendar(
     	{
         	defaultView: 'agendaWeek',
@@ -41,9 +39,14 @@
 					);
 				}
 				calendar.fullCalendar('unselect');
+
+				
 			},
 
 			editable: true,
+
+			$('#calendar').addTouch();
+
 
     	})
 
