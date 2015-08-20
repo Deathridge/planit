@@ -48,6 +48,9 @@
     	})
 
     	$('#calendar').addTouch();
-    	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
+    	
+    	if (thisScreenWidth < 601) {
+    		$('#calendar').fullCalendar('changeView', 'agendaDay');
+    	}
     	
 	});   	
