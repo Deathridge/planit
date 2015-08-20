@@ -11,6 +11,7 @@ from django.core.exceptions import ValidationError
 from .query import scrapeflight
 from django.contrib import messages
 from django.core import serializers
+import json
 
 
 def flights_main(request):
@@ -58,7 +59,7 @@ def flights_refresh(request):
 	return render(request, 'flight_table.html', {'object_list': flights})
 
 def events_json(request):
-	flights = list(Flight.objects.values('FlightCode', 'DepartureTime','ArrivalTime'))
-	json_flights = serializers.serialize('json', flights)
+	flights = Flight.objects.values('FlightCode', 'DepartureTime','ArrivalTime')
+	json_flights = json.dumps(flights)
 
 	return HttpResponse(json_flights)
