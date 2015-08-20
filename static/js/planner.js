@@ -10,6 +10,7 @@
     		selectable: true,
 			selectHelper: true,
 			height: 500,
+			events: '/j'
 				/*
 					when user select timeslot this option code will execute.
 					It has three arguments. Start,end and allDay.

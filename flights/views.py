@@ -10,6 +10,7 @@ from .models import Flight
 from django.core.exceptions import ValidationError
 from .query import scrapeflight
 from django.contrib import messages
+from django.core import serializers
 
 def flights_main(request):
 	form = SubmitFlight()
@@ -54,3 +55,9 @@ def flights_refresh(request):
 	flights = Flight.objects.all()
 
 	return render(request, 'flight_table.html', {'object_list': flights})
+
+def flights_refresh(request):
+	flights = Flight.objects.all()
+	json_flights = serializers.serialize('json', [flights,])
+
+	return HttpResponse(json_flights, mimetype='application/json')
