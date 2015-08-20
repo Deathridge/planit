@@ -10,14 +10,7 @@
     		selectable: true,
 			selectHelper: true,
 			height: 500,
-			eventSources: [
-
-        	// your event source
-        	{
-            url: '/j', // use the `url` property
-            color: 'yellow',    // an option!
-            textColor: 'black'  // an option!
-        	}
+			
 
         	// any other sources...
 
@@ -56,6 +49,15 @@
 			},
 
 			editable: true,	
+
+			eventSources: [
+
+        	// your event source
+        	{
+            url: '/j', // use the `url` property
+            color: 'yellow',    // an option!
+            textColor: 'black'  // an option!
+        	}
 
 
     	})
