@@ -14,7 +14,7 @@
 
         	// any other sources...
 
-    		]
+    		
 				/*
 					when user select timeslot this option code will execute.
 					It has three arguments. Start,end and allDay.
@@ -58,7 +58,7 @@
             color: 'yellow',    // an option!
             textColor: 'black'  // an option!
         	}
-
+        	]
 
     	})
 
