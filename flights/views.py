@@ -11,6 +11,7 @@ from django.core.exceptions import ValidationError
 from .query import scrapeflight
 from django.contrib import messages
 from django.core import serializers
+from .models import FlightCode, DepartureTime, ArrivalTime
 
 def flights_main(request):
 	form = SubmitFlight()
