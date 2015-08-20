@@ -9,7 +9,7 @@ $(document).ready(function() {
                 success: function(response) { // on success..
                 	
                     $.ajax({
-    					url: 'r',
+    					url: 'refresh',
     					success: function(data){
     						$('.flights').replaceWith(data)
     					}
