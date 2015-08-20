@@ -54,7 +54,7 @@
 
         	// your event source
         	{
-            url: '/planner/j', // use the `url` property
+            url: '/flights/json', // use the `url` property
             color: 'yellow',    // an option!
             textColor: 'black'  // an option!
         	}

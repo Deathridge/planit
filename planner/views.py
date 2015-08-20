@@ -9,8 +9,3 @@ from flights.models import Flight
 def planner(request):
 	return render(request, 'planner.html')
 
-def events_json(request):
-	flights = Flight.objects.all()
-	json_flights = serializers.serialize('json', flights)
-
-	return HttpResponse(json_flights)

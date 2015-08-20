@@ -15,6 +15,6 @@ urlpatterns = patterns('',
     url(r'^$', flights_main, name='main'),
     url(r'^flights/$', flights_main, name='flights-detail' ),
     url(r'^flights/refresh', flights_refresh, name='refresh'),
-    url(r'^planner/json', events_json, name='events_json'),
+    url(r'^flights/json', flights_json, name='flights_json'),
     url(r'^planner/$', planner, name='planner'),
 ) 
