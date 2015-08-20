@@ -58,7 +58,7 @@ def flights_refresh(request):
 	return render(request, 'flight_table.html', {'object_list': flights})
 
 def events_json(request):
-	flights = list(Flight.objects.values_list('FlightCode', 'DepartureTime','ArrivalTime',flat="true"))
+	flights = list(Flight.objects.values('FlightCode', 'DepartureTime','ArrivalTime'))
 	json_flights = serializers.serialize('json', flights)
 
 	return HttpResponse(json_flights)
