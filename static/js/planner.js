@@ -1,14 +1,12 @@
 
     $(document).ready(function() {
     	//page is ready resize calendar
-    	viewScreenSize();
-    	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
-    	else $('#calendar').fullCalendar('changeView', 'month');
+    	
     // page is now ready, initialize the calendar...
 
     	var calendar = $('#calendar').fullCalendar(
     	{
-        	defaultView: 'agendaWeek',    		
+        	defaultView: 'month',    		
     		selectable: true,
 			selectHelper: true,
 			height: 500,
@@ -51,7 +49,9 @@
     	})
 
     	$('#calendar').addTouch();    	
-    	
+    	viewScreenSize();
+    	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
+    	else $('#calendar').fullCalendar('changeView', 'month');
     	
 	});   	
 
