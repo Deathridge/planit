@@ -48,7 +48,7 @@
 
     	})
 
-    	$('#calendar').addTouch();
+    	
 
     	
 	});   	
