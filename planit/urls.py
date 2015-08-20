@@ -4,7 +4,7 @@ from flights.views import flights_main
 from django.conf import settings
 from django.conf.urls.static import static
 from flights.views import FlightListView, flights_refresh
-from planner.views import planner
+from planner.views import planner,events_json
 
 urlpatterns = patterns('',
     # Examples:
