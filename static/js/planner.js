@@ -47,10 +47,13 @@
 
     	})
 
-    	$('#calendar').addTouch();
+    	$('#calendar').addTouch();    	
     	
-    	if (thisScreenWidth < 601) {
-    		$('#calendar').fullCalendar('changeView', 'agendaDay');
-    	}
     	
 	});   	
+
+
+$(window).bind('resize', function () {
+    if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
+    else $('#calendar').fullCalendar('changeView', 'month');
+});
