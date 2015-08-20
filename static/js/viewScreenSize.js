@@ -1,3 +1,4 @@
+//gets screen dimensions on most browsers
 var thisScreenWidth = 0, thisScreenHeight = 0;
 function viewScreenSize() {
     if (typeof (window.innerWidth) === 'number') {
