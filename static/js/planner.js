@@ -43,12 +43,12 @@
 				
 			},
 
-			editable: true,
-
-			$('#calendar').addTouch();
+			editable: true,	
 
 
     	})
+
+    	$('#calendar').addTouch();
 
     	
 	});   	
