@@ -10,7 +10,18 @@
     		selectable: true,
 			selectHelper: true,
 			height: 500,
-			events: '/j'
+			eventSources: [
+
+        	// your event source
+        	{
+            url: '/j', // use the `url` property
+            color: 'yellow',    // an option!
+            textColor: 'black'  // an option!
+        	}
+
+        	// any other sources...
+
+    		]
 				/*
 					when user select timeslot this option code will execute.
 					It has three arguments. Start,end and allDay.
