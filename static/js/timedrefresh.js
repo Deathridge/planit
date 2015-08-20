@@ -1,4 +1,4 @@
-// Refresh the Table every 500 millseconds
+
 
 $(document).ready(function() {
         $('#flightform').submit(function() { // catch the form's submit event

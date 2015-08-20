@@ -54,6 +54,7 @@
 
 
 $(window).bind('resize', function () {
+	viewScreenSize();
     if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
     else $('#calendar').fullCalendar('changeView', 'month');
 });
