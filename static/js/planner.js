@@ -5,8 +5,7 @@
 
     	var calendar = $('#calendar').fullCalendar(
     	{
-        	defaultView: 'agendaWeek',
-    		weekMode: 'liquid',
+        	defaultView: 'basicWeek',    		
     		selectable: true,
 			selectHelper: true,
 			height: 500,
