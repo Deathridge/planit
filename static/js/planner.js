@@ -54,7 +54,7 @@
 
         	// your event source
         	{
-            url: '/j', // use the `url` property
+            url: '/planner/j', // use the `url` property
             color: 'yellow',    // an option!
             textColor: 'black'  // an option!
         	}
