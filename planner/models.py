@@ -5,3 +5,8 @@ class Planner(models.Model):
 	title = models.CharField(max_length=255)    
 	start = models.DateTimeField(blank=True, null=True)
 	end = models.DateTimeField(blank=True,null=True)
+
+	def __iter__(self):
+        	return [self.title,
+        			self.start,
+        			self.end ]

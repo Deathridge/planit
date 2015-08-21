@@ -21,7 +21,4 @@ def planner_json(request):
 		return HttpResponse(planner_json)
 
 
-	def __iter__(self):
-        return [	self.title,
-        			self.start,
-        			self.end ]
+	
