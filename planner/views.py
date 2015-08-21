@@ -21,12 +21,13 @@ def planner_json(request):
 	
 	data = json.loads(planner_json)
 	field_data = list()
-
+	count = 0
 	for d in data:
 		del d['pk']
 		del d['model']
 		field_data.append(d['fields'])
-		field_data.append('end')
+		field_data.append(count)
+		count = count + 1
 	
 	planner_json = json.dumps(field_data)
 
