@@ -15,15 +15,16 @@ def planner_json(request):
 	flights = Flight.objects.all()
 	for flight in flights:
 		Planner(title=flight.FlightCode + " " + flight.DepartureLocation + " " + flight.ArrivalLocation, start=flight.DepartureDate, end=flight.DepartureDate).save()
+	
 	planner = Planner.objects.all()
 	planner_json = serializers.serialize('json', planner)		
 	
 	data = json.loads(planner_json)
 
 	for d in data:
-    	del d['pk']
-    	del d['model']
-
+		del d['pk']
+		del d['model']
+	
 	planner_json = json.dumps(data)
 
 	return HttpResponse(planner_json)
