@@ -51,7 +51,7 @@
 			editable: true,	
 
 			eventSources: [{
-				url:'planner/json'
+				url:'/planner/json'
 			}],
 			
 
