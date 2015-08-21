@@ -48,12 +48,13 @@
 				
 			},
 
-			editable: true,	
+			
 
 			eventSources: [{
 				url:'/planner/json'
 			}],
 			
+			editable: true,	
 
     	})
 
