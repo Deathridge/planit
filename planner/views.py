@@ -19,13 +19,14 @@ def planner_json(request):
 	planner = Planner.objects.all()
 	planner_json = serializers.serialize('json', planner)		
 	
-	data = json.loads(planner)
+	data = json.loads(planner_json)
 	field_data = list()
 
 	for d in data:
 		del d['pk']
 		del d['model']
 		field_data.append(d['fields'])
+		field_data.append('end')
 	
 	planner_json = json.dumps(field_data)
 
