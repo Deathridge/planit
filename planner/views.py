@@ -13,6 +13,7 @@ def planner(request):
 
 def planner_json(request):
 	flights = Flight.objects.all()
+	Planner.objects.all().delete()
 	for flight in flights:
 		Planner(title=flight.FlightCode + " " + flight.DepartureLocation + " " + flight.ArrivalLocation, start=flight.DepartureDate, end=flight.DepartureDate).save()
 	
@@ -21,16 +22,16 @@ def planner_json(request):
 	
 	data = json.loads(planner_serialise)
 	field_data = list()
-	count = 0
+	
 	for d in data:
 		del d['pk']
 		del d['model']
 		field_data.append(d['fields'])
-		field_data.append(count)
-		count = count + 1
+		
+		
 	
 	planner_json = json.dumps(field_data)
 
-	return HttpResponse(planner_serialise)
+	return HttpResponse(planner_json)
 
 
