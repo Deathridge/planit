@@ -19,7 +19,7 @@ def planner_json(request):
 	planner = Planner.objects.all()
 	planner_json = serializers.serialize('json', planner)		
 	
-	data = json.loads(planner_json)
+	data = json.loads(planner)
 	field_data = list()
 
 	for d in data:
