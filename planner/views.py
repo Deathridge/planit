@@ -5,6 +5,7 @@ import requests, random, string, os,sys
 from planit.settings import BASE_DIR
 from django.core import serializers
 from flights.models import Flight
+from planner.models import Planner
 
 def planner(request):
 	return render(request, 'planner.html')
