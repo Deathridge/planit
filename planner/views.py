@@ -6,6 +6,7 @@ from planit.settings import BASE_DIR
 from django.core import serializers
 from flights.models import Flight
 from planner.models import Planner
+import json
 
 def planner(request):
 	return render(request, 'planner.html')
@@ -16,6 +17,14 @@ def planner_json(request):
 		Planner(title=flight.FlightCode + " " + flight.DepartureLocation + " " + flight.ArrivalLocation, start=flight.DepartureDate, end=flight.DepartureDate).save()
 	planner = Planner.objects.all()
 	planner_json = serializers.serialize('json', planner)		
+	
+	data = json.loads(planner_json)
+
+	for d in data:
+    	del d['pk']
+    	del d['model']
+
+	planner_json = json.dumps(data)
 
 	return HttpResponse(planner_json)
 
