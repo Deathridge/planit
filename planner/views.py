@@ -17,7 +17,7 @@ def planner_json(request):
 		Planner(title=flight.FlightCode + " " + flight.DepartureLocation + " " + flight.ArrivalLocation, start=flight.DepartureDate, end=flight.DepartureDate).save()
 	
 	planner = Planner.objects.all()
-	planner_json = serializers.serialize('json', planner)		
+	planner_serialise = serializers.serialize('json', planner)		
 	
 	data = json.loads(planner_json)
 	field_data = list()
@@ -31,6 +31,6 @@ def planner_json(request):
 	
 	planner_json = json.dumps(field_data)
 
-	return HttpResponse(planner_json)
+	return HttpResponse(planner_serialise)
 
 
