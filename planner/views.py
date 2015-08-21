@@ -24,7 +24,7 @@ def planner_json(request):
 	for d in data:
 		del d['pk']
 		del d['model']
-		field_data = d['fields']
+		field_data = field_data.append(d['fields'])
 	
 	planner_json = json.dumps(field_data)
 
