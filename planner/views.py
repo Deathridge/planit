@@ -12,5 +12,9 @@ def planner(request):
 def planner_json(request):
 	flights = Flight.objects.all()
 	for flight in flights:
-		Planner(title=flight.FlightCode + " " + flight.DepartureLocation + " " + flight.ArrivalLocation, start=flight.DepartureDate, end=flight.DepartureDate).save()
+		planner = Planner(title=flight.FlightCode + " " + flight.DepartureLocation + " " + flight.ArrivalLocation, start=flight.DepartureDate, end=flight.DepartureDate).save()
+		planner_json = serializers.serialize('json', planner)
+		return HttpResponse(planner_json)
+
+
 
