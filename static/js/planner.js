@@ -11,15 +11,7 @@
 			selectHelper: true,
 			height: 500,
 			
-			eventSources: [
 
-        	// your event source
-        	{
-            url: '/planner/json', // use the `url` property
-            color: 'yellow',    // an option!
-            textColor: 'black'  // an option!
-        	}
-        	]
         	// any other sources...
 
     		
@@ -58,6 +50,7 @@
 
 			editable: true,	
 
+			events: '/planner/json'
 			
 
     	})
