@@ -6,7 +6,4 @@ class Planner(models.Model):
 	start = models.DateTimeField(blank=True, null=True)
 	end = models.DateTimeField(blank=True,null=True)
 
-	def __iter__(self):
-        	return [self.title,
-        			self.start,
-        			self.end ]
+
