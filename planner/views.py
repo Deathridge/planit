@@ -20,7 +20,7 @@ def planner_json(request):
 	planner_json = serializers.serialize('json', planner)		
 	
 	data = json.loads(planner_json)
-	field_data = []
+	field_data = list()
 
 	for d in data:
 		del d['pk']
