@@ -29,8 +29,8 @@
 					*/
 				var title = prompt('Event Title:');
 				var description = prompt('Event description:');
-				var start = datetimepicker();
-				var end = datetimepicker();
+				var start = $.datepicker.parseDateTime = function(dateFormat, timeFormat, dateTimeString, dateSettings, timeSettings){};
+				var end = $.datepicker.parseDateTime = function(dateFormat, timeFormat, dateTimeString, dateSettings, timeSettings){};
 					/*
 						if title is enterd calendar will add title and event into fullCalendar.
 					*/
