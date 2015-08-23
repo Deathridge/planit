@@ -16,7 +16,7 @@ def planner_json(request):
 	flights = Flight.objects.all()
 	Planner.objects.all().delete()
 	for flight in flights:
-		Planner(title=flight.FlightCode, start=datetime.datetime.combine(flight.DepartureDate, flight.DepartureTime), end=datetime.datetime.combine(flight.DepartureDate,flight.ArrivalTime), description="Departs: " + flight.DepartureLocation + ", Arrives: " + flight.ArrivalLocation).save()
+		Planner(title=flight.FlightCode, start=datetime.datetime.combine(flight.DepartureDate, flight.DepartureTime), end=datetime.datetime.combine(flight.DepartureDate,flight.ArrivalTime), description="Departs: " + flight.DepartureLocation + "\n Arrives: " + flight.ArrivalLocation).save()
 	
 	planner = Planner.objects.all()
 	planner_serialise = serializers.serialize('json', planner)		
