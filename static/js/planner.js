@@ -58,12 +58,13 @@
 
 			eventRender: function(event, element) {
     		    element.qtip(
+    		    position: {	
     		    my: 'bottom left',
         		// Position my top left...
         		at: 'top right',
         		// at the bottom right of...
         		target: 'mouse'
-
+        		}
     		    {
             	content: event.description            	
         		});
