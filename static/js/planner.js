@@ -28,6 +28,9 @@
 						after selection user will be promted for enter title for event.
 					*/
 				var title = prompt('Event Title:');
+				var description = prompt('Event description:');
+				var start = datetimepicker();
+				var end = datetimepicker();
 					/*
 						if title is enterd calendar will add title and event into fullCalendar.
 					*/
@@ -38,7 +41,8 @@
 							title: title,
 							start: start,
 							end: end,
-							allDay: allDay
+							description,
+							
 						},
 						true // make the event "stick"
 					);
