@@ -56,6 +56,12 @@
 			
 			editable: true,	
 
+			eventRender: function(event, element) {
+    		    element.qtip({
+            	content: event.description
+        		});
+    		}
+
     	})
 
     	$('#calendar').addTouch();    	
