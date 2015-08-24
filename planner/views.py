@@ -8,6 +8,7 @@ from flights.models import Flight
 from planner.models import Planner
 import datetime
 import json
+from django.views.decorators.csrf import csrf_exempt
 
 def planner(request):
 	return render(request, 'planner.html')
@@ -35,7 +36,7 @@ def planner_json(request):
 
 	return HttpResponse(planner_json)
 
-
+@csrf_exempt
 def planner_create(request):
 	if request.method == "POST":
 		received_data = json.loads(request.body)
