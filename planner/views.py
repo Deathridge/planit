@@ -37,5 +37,7 @@ def planner_json(request):
 
 
 def planner_create(request):
-	received_data = json.loads(request.body)
-	Planner(title=received_data['title'], start=received_data['start'], end=received_data['end'], description=received_data['description'], protect=True).save()
+	if request.method == "POST"
+		received_data = json.loads(request.body)
+		Planner(title=received_data['title'], start=received_data['start'], end=received_data['end'], description=received_data['description'], protect=True).save()
+		return HttpResponse(received_data)
