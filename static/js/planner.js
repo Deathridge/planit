@@ -93,3 +93,8 @@ $("#Month").click( function()
 {
     $('#calendar').fullCalendar('changeView', 'month');
 });
+
+$("#agendaweek").click( function()
+{
+    $('#calendar').fullCalendar('changeView', 'agendaWeek');
+});
