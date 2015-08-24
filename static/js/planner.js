@@ -88,3 +88,8 @@ $(window).bind('resize', function () {
     if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
     else $('#calendar').fullCalendar('changeView', 'agendaWeek');
 });
+
+$("#Month").click( function()
+{
+    $('#calendar').fullCalendar('changeView', 'month');
+});
