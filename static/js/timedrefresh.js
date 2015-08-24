@@ -12,6 +12,7 @@ $(document).ready(function() {
     					url: 'refresh',
     					success: function(data){
     						$('.flights').replaceWith(data)
+                            $('#calendar').fullCalendar( 'refetchEvents' )
     					}
     				})
 
