@@ -29,8 +29,18 @@
 					*/
 				var title = prompt('Event Title:');
 				var description = prompt('Event description:');
-				var start = document.getElementById('start');
-				var end = document.getElementById('end');
+				var start = null;
+				$("#start").datepicker().datepicker("show").change(function ()
+   				{
+      				start = $(this).val();
+      				alert("You picked: " + start);
+    			});
+				var end = null;
+				$("#end").datepicker().datepicker("show").change(function ()
+   				{
+      				start = $(this).val();
+      				alert("You picked: " + end);
+    			});
 					/*
 						if title is enterd calendar will add title and event into fullCalendar.
 					*/
