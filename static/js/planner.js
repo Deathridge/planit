@@ -46,26 +46,25 @@
 						true // make the event "stick"
 					);
 				}
-				calendar.fullCalendar('unselect');
-				var start = start;
-				var end = end;
+				calendar.fullCalendar('unselect'),
+				function(){
+				alert(start);
+				$.ajax({
+					type: "POST",
+					url: '/planner/create',		
+					contentType: 'application/json; charset=utf-8',		
+					data: {"title":title, "start":start, "end":end,"description":description},
+					datatype: 'text',
+					success: function() {
+						alert('success!');
+					},				
+
+				});
+				},
 				
 			},
 
-			function(){
-			alert(start);
-			$.ajax({
-				type: "POST",
-				url: '/planner/create',		
-				contentType: 'application/json; charset=utf-8',		
-				data: {"title":title, "start":start, "end":end,"description":description},
-				datatype: 'text',
-				success: function() {
-					alert('success!');
-				},				
-
-			});
-			},
+			
 
 			eventSources: [{
 				url:'/planner/json'
