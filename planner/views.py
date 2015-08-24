@@ -36,5 +36,5 @@ def planner_json(request):
 	return HttpResponse(planner_json)
 
 
-def planner_create(request, data):
-	Planner(title=data.title, start=data.start, end=data.end, description=data.description, protect=True).save()
+def planner_create(request):
+	Planner(title=request.title, start=request.start, end=request.end, description=request.description, protect=True).save()

@@ -52,10 +52,11 @@
 			},
 			function(){
 			$.ajax({
-				type: "PUT",
+				type: "POST",
 				url: '/planner/create',				
 				data: {"title":title, "start":start, "end":end,"description":description},
-				dataType:"json",
+				success: function() {},
+				headers: {'X_METHODOVERRIDE': 'PUT'}
 
 			});
 			},
