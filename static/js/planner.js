@@ -78,7 +78,7 @@
     	$('#calendar').addTouch();    	
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
-    	else $('#calendar').fullCalendar('changeView', 'month');
+    	else $('#calendar').fullCalendar('changeView', 'agendaWeek');
     	
 	});   	
 
@@ -86,5 +86,5 @@
 $(window).bind('resize', function () {
 	viewScreenSize();
     if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
-    else $('#calendar').fullCalendar('changeView', 'month');
+    else $('#calendar').fullCalendar('changeView', 'agendaWeek');
 });
