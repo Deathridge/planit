@@ -55,8 +55,7 @@
 				type: "POST",
 				url: '/planner/create',				
 				data: {"title":title, "start":start, "end":end,"description":description},
-				success: function() {},
-				headers: {'X_METHODOVERRIDE': 'PUT'}
+				success: function() {},				
 
 			});
 			},
