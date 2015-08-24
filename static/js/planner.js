@@ -51,8 +51,9 @@
 				var end = end;
 				
 			},
-			alert(start),
+
 			function(){
+			alert(start);
 			$.ajax({
 				type: "POST",
 				url: '/planner/create',		
