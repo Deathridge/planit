@@ -1,4 +1,6 @@
 
+   
+
     $(document).ready(function() {
     	//page is ready resize calendar
     	
@@ -9,8 +11,7 @@
         	defaultView: 'agendaWeek',    		
     		selectable: true,
 			selectHelper: true,
-			height: 500,
-			
+			height: 500,			
 
         	// any other sources...
 
@@ -29,7 +30,8 @@
 					*/
 				var title = prompt('Event Title:');
 				var description = prompt('Event description:');
-				
+				var startdate = start.format()
+				var enddate = end.format()
 					/*
 						if title is enterd calendar will add title and event into fullCalendar.
 					*/
@@ -45,26 +47,29 @@
 						},
 						true // make the event "stick"
 					);
-				}
-				calendar.fullCalendar('unselect'),
-				function(){
-				alert(start);
-				$.ajax({
+
+					var json = {"title": title, "start": startdate, "end": enddate,"description": description}
+
+					$.ajax({
 					type: "POST",
-					url: '/planner/create',		
-					contentType: 'application/json; charset=utf-8',		
-					data: {"title":title, "start":start, "end":end,"description":description},
-					datatype: 'text',
+					url: '/planner/create',							
+					data: JSON.stringify(json),
 					success: function() {
 						alert('success!');
-					},				
+					},
+					contentType: "application/json",
+					datatype: 'json',
+									
+					});
+					
 
-				});
-				};
+					
+					
+				}
+				calendar.fullCalendar('unselect');				
 				
-			},
 
-			
+			},
 
 			eventSources: [{
 				url:'/planner/json'
@@ -87,6 +92,7 @@
     		}
 
     	})
+		
 
     	$('#calendar').addTouch();    	
     	viewScreenSize();
@@ -111,3 +117,5 @@ $("#agendaweek").click( function()
 {
     $('#calendar').fullCalendar('changeView', 'agendaWeek');
 });
+
+

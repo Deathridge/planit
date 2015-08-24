@@ -7,7 +7,7 @@ from django.core import serializers
 from flights.models import Flight
 from planner.models import Planner
 import datetime
-import json
+import simplejson, json
 from django.views.decorators.csrf import csrf_exempt
 
 def planner(request):
@@ -38,7 +38,9 @@ def planner_json(request):
 
 @csrf_exempt
 def planner_create(request):
+	print request.body
 	if request.method == "POST":
-		received_data = json.loads(request.body)
+		received_data = simplejson.loads(request.body)
+
 		Planner(title=received_data['title'], start=received_data['start'], end=received_data['end'], description=received_data['description'], protect=True).save()
 		return HttpResponse(received_data)
