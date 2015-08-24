@@ -6,7 +6,7 @@
 
     	var calendar = $('#calendar').fullCalendar(
     	{
-        	defaultView: 'month',    		
+        	defaultView: 'agendaWeek',    		
     		selectable: true,
 			selectHelper: true,
 			height: 500,
@@ -29,22 +29,7 @@
 					*/
 				var title = prompt('Event Title:');
 				var description = prompt('Event description:');
-				$('#start').click(function(){
-				var start = null;
-				$("#start").datepicker().datepicker("show").change(function ()
-   				{
-      				start = $(this).val();
-      				alert("You picked: " + start);
-    			});
-				});
-				$('#end').click(function(){
-				var end = null;
-				$("#end").datepicker().datepicker("show").change(function ()
-   				{
-      				start = $(this).val();
-      				alert("You picked: " + end);
-    			});
-				});
+				
 					/*
 						if title is enterd calendar will add title and event into fullCalendar.
 					*/
