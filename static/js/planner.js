@@ -55,7 +55,9 @@
 				type: "POST",
 				url: '/planner/create',				
 				data: {"title":title, "start":start, "end":end,"description":description},
-				success: function() {},				
+				success: function() {
+					alert('success!');
+				},				
 
 			});
 			},
