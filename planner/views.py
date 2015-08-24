@@ -14,7 +14,7 @@ def planner(request):
 
 def planner_json(request):
 	flights = Flight.objects.all()
-	Planner.objects.all().delete()
+	Planner.objects.filter(protect=False).delete()
 	for flight in flights:
 		Planner(title=flight.FlightCode, start=datetime.datetime.combine(flight.DepartureDate, flight.DepartureTime), end=datetime.datetime.combine(flight.DepartureDate,flight.ArrivalTime), description="Departs: " + flight.DepartureLocation + "'\n' Arrives: " + flight.ArrivalLocation).save()
 	
@@ -36,3 +36,5 @@ def planner_json(request):
 	return HttpResponse(planner_json)
 
 
+def planner_create(request, data):
+	Planner(title=data.title, start=data.start, end=data.end, description=data.description, protect=True).save()

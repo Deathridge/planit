@@ -6,4 +6,5 @@ class Planner(models.Model):
 	start = models.DateTimeField(blank=True, null=True)
 	end = models.DateTimeField(blank=True,null=True)
 	description = models.CharField(max_length=255, null=True, blank=True)
+	protect = models.BooleanField(default=False)
 

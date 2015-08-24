@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^flights/json', flights_json, name='flights_json'),
     url(r'^planner/$', planner, name='planner'),
     url(r'^planner/json', planner_json, name='planner_json'),
+    url(r'^planner/create', planner_create, name='planner_create')
 ) 

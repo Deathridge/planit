@@ -51,7 +51,13 @@
 				
 			},
 
-			
+			$.ajax({
+				type: "PUT",
+				url: '/planner/create',
+				dataType:"json"
+				data: {"title":title, "start":start, "end":end,"description":description}
+
+			});
 
 			eventSources: [{
 				url:'/planner/json'
