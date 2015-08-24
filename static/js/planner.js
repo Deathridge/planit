@@ -53,8 +53,10 @@
 			function(){
 			$.ajax({
 				type: "POST",
-				url: '/planner/create',				
+				url: '/planner/create',		
+				contentType: 'application/json; charset=utf-8',		
 				data: {"title":title, "start":start, "end":end,"description":description},
+				datatype: 'text',
 				success: function() {
 					alert('success!');
 				},				
