@@ -51,7 +51,7 @@
 				var end = end;
 				
 			},
-
+			alert(start);
 			function(){
 			$.ajax({
 				type: "POST",
