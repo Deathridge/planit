@@ -45,19 +45,19 @@
 
 
 <div class="flights" >
-<div class="well">
+    <div class="well">
 
-{% for object in object_list %}
-<p>Flight Code: {{ object.FlightCode }}</p>
-<p>Departure Date: {{ object.DepartureDate }}</p>
-<p>Departure Time: {{ object.DepartureTime }}</p>
-<p>Arrival Time: {{ object.ArrivalTime }}</p>
-<p>Departure Location: {{ object.DepartureLocation }}</p>
-<p>Arrival Location: {{ object.ArrivalLocation }}</p>
-<hr>
-{% endfor %}
+    {% for object in object_list %}
+    <p>Flight Code: {{ object.FlightCode }}</p>
+    <p>Departure Date: {{ object.DepartureDate }}</p>
+    <p>Departure Time: {{ object.DepartureTime }}</p>
+    <p>Arrival Time: {{ object.ArrivalTime }}</p>
+    <p>Departure Location: {{ object.DepartureLocation }}</p>
+    <p>Arrival Location: {{ object.ArrivalLocation }}</p>
+    <hr>
+    {% endfor %}
 
-</div>
+    </div>
 </div>
 
 
