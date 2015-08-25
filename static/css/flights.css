@@ -17,7 +17,7 @@
   label {
       color: #ffffff;
   }
-  
+  /*
   html, body { 
   background: url(../images/Background-pattern.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -27,7 +27,7 @@
   min-height: 100%;
   margin: 0;
   }
-  
+  */  
 
   .flights {
     margin-right: auto;    
@@ -69,7 +69,7 @@
   label {
       color: #ffffff;
   }
-
+  /*
   html, body { 
   background: url(../images/earth-from-space-min.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -79,7 +79,7 @@
   min-height: 100%;
   margin: 0;
   }
-
+  */
   .flights {    
     width: 100%;
   }
@@ -116,7 +116,11 @@
 
 
 .well {
-  background: rgba(125,125,125,0.5);
+  background: #6DBDD6;
+  background: -webkit-linear-gradient(#6DBDDB, #6DBDD6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#6DBDDB, #6DBDD6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#6DBDDB, #6DBDD6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#6DBDDB, #6DBDD6); /* Standard syntax */
 }
 
 .blank {
@@ -124,8 +128,8 @@
 }
 
 p {
-  color: #ffffff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #000000;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
   margin-left: 5px;
   margin-right: 5px;
 
@@ -153,3 +157,12 @@ p {
   background-color: #ADD8E6;
 }
 
+
+
+body{
+
+background: -webkit-linear-gradient(#404035, #404040); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#404035, #404040); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#404035, #404040); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#404035, #404040); /* Standard syntax */
+}
