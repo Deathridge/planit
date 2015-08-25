@@ -159,6 +159,6 @@ p {
   background: #5C5C5C;
 }
 
-.a {
-  color: #ffffff;
+a {
+  color: #ffffff !important;
 }
