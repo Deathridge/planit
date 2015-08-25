@@ -5,6 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from flights.views import FlightListView, flights_refresh, flights_json
 from planner.views import planner, planner_json, planner_create
+from django.http import HttpResponseRedirect
 
 urlpatterns = patterns('',
     # Examples:
@@ -12,7 +13,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', flights_main, name='main'),
+    url(r'^$', HttpResponseRedirect("/flights"), name='main'),
     url(r'^flights/$', flights_main, name='flights-detail' ),
     url(r'^flights/refresh', flights_refresh, name='refresh'),
     url(r'^flights/json', flights_json, name='flights_json'),
