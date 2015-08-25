@@ -26,8 +26,8 @@ TEMPLATE_DIRS = (
 SECRET_KEY = 'xct-purr$*(q$n^8x4dws^2&ryupp-c%#j*tcn9sl03xz-r5*v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
+ALLOWED_HOSTS = [".herokuapp.com"]
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
