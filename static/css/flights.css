@@ -163,10 +163,6 @@ a {
   color: #ffffff !important;
 }
 
-.ui-datepicker-current-day
-{
-    background: #83C948
-}
 
 .ui-state-active, .ui-widget-content .ui-state-active 
 {
@@ -177,4 +173,8 @@ a {
     outline-color:-moz-use-text-color;
     outline-style:none;
     outline-width:medium;
+}
+
+thead td {
+  font-weight: bold;
 }
