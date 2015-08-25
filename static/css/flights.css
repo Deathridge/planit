@@ -168,6 +168,13 @@ a {
     background: #83C948
 }
 
-body {
-  background: #e6e6e6;
+.ui-state-active, .ui-widget-content .ui-state-active 
+{
+    background:#FFFFFF ;
+    border:1px solid #FBD850;
+    color:#EB8F00;
+    font-weight:bold;
+    outline-color:-moz-use-text-color;
+    outline-style:none;
+    outline-width:medium;
 }
