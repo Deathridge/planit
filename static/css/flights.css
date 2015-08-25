@@ -125,7 +125,7 @@
 }
 
 p {
-  color: #000000;
+  color: #ffffff;
   /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
   margin-left: 5px;
   margin-right: 5px;
@@ -157,4 +157,8 @@ p {
 
 .navbar {
   background: #5C5C5C;
+}
+
+a {
+  color: #ffffff;
 }
