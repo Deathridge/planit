@@ -116,7 +116,7 @@
 
 
 .well {
-  background-color: #1a1a1a;
+  background: rgba(125,125,125,0.4);
 }
 
 .blank {
