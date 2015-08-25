@@ -46,6 +46,11 @@
     position: fixed;
     bottom: 20px;
   }
+
+  .navbar {
+    position: fixed;
+    top:0px;
+  }
 }
 
 
