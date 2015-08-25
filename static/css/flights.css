@@ -173,6 +173,6 @@ a {
     outline-width:medium;
 }
 
-td {
+td,th {
   text-align: center;
 }
