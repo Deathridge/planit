@@ -45,7 +45,7 @@ def flights_main(request):
 		form = SubmitFlight()
 	
 	flights = Flight.objects.all()
-	return render(request, 'flight.html', {'form': form, 'object_list': flights, 'messages': messages})
+	return render(request, 'flight.html', {'form': form, 'object_list': flights})
 
 class FlightListView(ListView):
 
