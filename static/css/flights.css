@@ -155,6 +155,6 @@ p {
 }
 
 
-body {
-  background: black;
+.navbar {
+  background: #5C5C5C;
 }
