@@ -45,17 +45,37 @@
 
 
 <div class="flights" >
-    <div class="well">
+    <div class="well">    
 
-    {% for object in object_list %}
-    <p>Flight Code: {{ object.FlightCode }}</p>
-    <p>Departure Date: {{ object.DepartureDate }}</p>
-    <p>Departure Time: {{ object.DepartureTime }}</p>
-    <p>Arrival Time: {{ object.ArrivalTime }}</p>
-    <p>Departure Location: {{ object.DepartureLocation }}</p>
-    <p>Arrival Location: {{ object.ArrivalLocation }}</p>
-    <hr>
-    {% endfor %}
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Flight Code</td>
+                        <td>Departure Date</td>
+                        <td>Departure Time</td>
+                        <td>Arrival Time</td>
+                        <td>Departure Location</td>
+                        <td>Arrival Location</td>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                {% for object in object_list %}
+                    <tr>
+                        <td>{{ object.FlightCode }}</td>
+                        <td>{{ object.DepartureDate }}</td>
+                        <td>{{ object.DepartureTime }}</td>
+                        <td>{{ object.ArrivalTime }}</td>
+                        <td>{{ object.DepartureLocation }}</td>
+                        <td>{{ object.ArrivalLocation }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
 
     </div>
 </div>
