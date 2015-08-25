@@ -34,9 +34,10 @@ def flights_main(request):
 				flight = Flight(FlightCode=FlightCode,DepartureDate=DepartureDate,DepartureTime=DepartureTime,ArrivalTime=ArrivalTime, DepartureLocation=DepartureLocation,ArrivalLocation=ArrivalLocation)
 				flight.save()
 			elif (data[6] == 0):
-				error = {"error": 'Invalid FlightCode'}
+				messages.add_message(request, messages.ERROR, 'Invalid FlightCode')
 			elif (data[6] == 1):
-				error = {"error": 'No flight data for provided date'}
+				messages.add_message(request, messages.ERROR, 'No flight data for provided date')
+
 			
 
 	else:
@@ -44,8 +45,7 @@ def flights_main(request):
 		form = SubmitFlight()
 	
 	flights = Flight.objects.all()
-	return render(request, 'flight.html', {'form': form, 'object_list': flights})
-	return HttpResponse(error)
+	return render(request, 'flight.html', {'form': form, 'object_list': flights, 'messages': messages})
 
 class FlightListView(ListView):
 
