@@ -91,11 +91,10 @@
 }
 
 
-.row {
-  
-    text-align: center;
-    
-  
+.row {  
+    text-align: center; 
+    margin: 40px 0px;    
+    vertical-align: middle;    
 }
 
 
@@ -108,11 +107,6 @@
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
-}
-
-.row {
-    margin: 40px 0px;    
-    vertical-align: middle;    
 }
 
 .container-fluid {
@@ -148,9 +142,6 @@ p {
   margin-left: 30%;
   margin-right: 30%;
 }
-
-/* Flatten das boostrap */
-
 
 .navbar .active {
   font-weight: bold;
