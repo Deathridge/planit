@@ -124,6 +124,7 @@
   padding-bottom: 10px;
 }
 
+
 .form-control {
   text-align: center;
 }
@@ -151,10 +152,13 @@
   background: #5C5C5C;
 }
 
-td, p, a {
+a {
   color: #ffffff !important;
-  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+}
 
+.ui-datepicker-current-day
+{
+    background: #83C948
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active 
@@ -166,6 +170,14 @@ td, p, a {
     outline-color:-moz-use-text-color;
     outline-style:none;
     outline-width:medium;
+}
+
+td, p, a {
+  color: #ffffff !important;
+  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+
+}
+
 }
 
 td,th {
