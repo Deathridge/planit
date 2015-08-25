@@ -12,6 +12,7 @@ from .query import scrapeflight
 from django.contrib import messages
 from django.core import serializers
 
+
 def flights_main(request):
 	form = SubmitFlight()
 
@@ -33,10 +34,9 @@ def flights_main(request):
 				flight = Flight(FlightCode=FlightCode,DepartureDate=DepartureDate,DepartureTime=DepartureTime,ArrivalTime=ArrivalTime, DepartureLocation=DepartureLocation,ArrivalLocation=ArrivalLocation)
 				flight.save()
 			elif (data[6] == 0):
-				messages.add_message(request, messages.ERROR, 'Invalid FlightCode')
+				return HttpResponse({error: 'Invalid FlightCode'})
 			elif (data[6] == 1):
-				messages.add_message(request, messages.ERROR, 'No flight data for provided date')
-
+				return HttpResponse({error: 'No flight data for provided date'})
 			
 
 	else:

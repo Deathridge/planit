@@ -7,7 +7,13 @@ $(document).ready(function() {
                 type: $(this).attr('method'), // GET or POST
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
-                	
+                	$.ajax({
+                        type: "GET",
+                        url: '/flights'
+                        success: function(data){
+                            $('.message-alert').replaceWith(data)
+                        }
+                    }
                     $.ajax({
     					url: 'refresh',
     					success: function(data){
