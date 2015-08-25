@@ -117,10 +117,7 @@
 
 .well {
   
-  background: -webkit-linear-gradient(blue, #93B1C1); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(blue, #93B1C1); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(blue, #93B1C1); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(blue, #93B1C1); /* Standard syntax */
+  background: blue;
 }
 
 .blank {
@@ -128,7 +125,7 @@
 }
 
 p {
-  color: #000000;
+  color: #ffffff;
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
   margin-left: 5px;
   margin-right: 5px;
