@@ -128,7 +128,6 @@ td {
   color: #ffffff;
   /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 
-
 }
 
 .form-control {
@@ -172,4 +171,8 @@ a {
     outline-color:-moz-use-text-color;
     outline-style:none;
     outline-width:medium;
+}
+
+td {
+  text-align: center;
 }
