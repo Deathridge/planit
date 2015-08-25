@@ -166,3 +166,7 @@ background: -webkit-linear-gradient(#C7D0D5, #C7D0D0); /* For Safari 5.1 to 6.0 
   background: -moz-linear-gradient(#C7D0D5, #C7D0D0); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#C7D0D5, #C7D0D0); /* Standard syntax */
 }
+
+.navbar {
+  background: #93B1C6;
+}
