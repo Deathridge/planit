@@ -11,7 +11,7 @@
         	defaultView: 'agendaWeek',    		
     		selectable: true,
 			selectHelper: true,
-			height: 800,			
+			height: 650,			
 
         	// any other sources...
 
