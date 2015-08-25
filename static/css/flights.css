@@ -178,7 +178,7 @@ p, a {
 
 }
 
-#flights #well #table-responsive #table tbody td {
+.table>tbody>tr>td {
   color: #ffffff !important;
 }
 
