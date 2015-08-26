@@ -3,8 +3,8 @@
 {% block content %}
 
 <div class="flight-form">
-    <div class="well">
-	<!--<div class="row add">-->
+    <!--<div class="well">-->
+	
     	<form id="flightform" class="form-group" action="" method="POST" style="position:relative">
         	{% csrf_token %}
         	<p>
@@ -28,7 +28,7 @@
         	<button type="submit" class="btn btn-primary btn-large" name = "Add" value ="Add" style="position:relative" >Add</button>
         	<!--<input type="submit" name ="Add" value ="Add"></input>-->
     	</form>
-	<!-- </div> -->    
+	
         {% if messages %}
         <ul class="messages">
             {% for message in messages %}
@@ -39,13 +39,13 @@
             {% endfor %}
         </ul>
         {% endif %}
-    </div>
+ <!--   </div>-->
 </div>
 
 
 
 <div class="flights" >
-    <div class="well">    
+ <!--   <div class="well">    -->
 
         <div class="table-responsive .table-condensed">
             <table class="table">
@@ -77,7 +77,7 @@
         </div>
 
 
-    </div>
+   <!-- </div> -->
 </div>
 
 
