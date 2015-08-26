@@ -37,9 +37,7 @@
 
   .flight-form {    
     float: left;
-    width: 30%;
-    position: fixed;
-    top: 150px;
+    width: 30%;   
   }
 
   .footer {
