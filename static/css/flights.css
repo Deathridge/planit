@@ -180,7 +180,7 @@ p, a {
   color: #ffffff !important;
 }
 .table>thead>tr>th {
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: #ffffff;
 }
 
 td,th {
