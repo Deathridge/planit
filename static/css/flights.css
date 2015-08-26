@@ -177,7 +177,7 @@ p, a {
 }
 
 .table>tbody>tr>td {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 .table>thead>tr>th {
   background: #ffffff;
@@ -189,7 +189,7 @@ td,th {
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .table {
