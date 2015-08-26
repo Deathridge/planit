@@ -6,20 +6,18 @@
     <!--<div class="well">-->
 	
     	<form id="flightform" class="form-group" action="" method="POST" style="position:relative">
-        	{% csrf_token %}
-        	<p>
-        	Flight Code: 	
-        	</p>
+        	{% csrf_token %}        	
         	<div class="row" id="flightcode">
+            <p>
+            Flight Code:    
+            </p>
         	{{ form.FlightCode }}   
         	</div>        	
-        	<div>
-        	&nbsp
-        	</div> 
-        	<p>
-        	Departure Date: 	
-        	</p>       	
+        	       	       	
         	<div class="row" id="departuredate">
+            <p>
+            Departure Date:     
+            </p>
         	{{ form.DepartureDate }}   
         	</div>         	
         	<div id="message-alert">
