@@ -185,7 +185,7 @@ p, a {
 
 td,th {
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 body {
