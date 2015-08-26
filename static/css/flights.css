@@ -191,3 +191,8 @@ td,th {
 body {
   background-color: #F0F0F0;
 }
+
+.table {
+
+  margin-bottom: 0px !important;
+}
