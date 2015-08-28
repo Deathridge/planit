@@ -167,15 +167,16 @@ a {
 }
 
 p, a {
-  color: #000000;
+  color: #ffffff;
   /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
   font-style: bold;
 
 }
 
 .table>tbody>tr>td {
-  color: #000000 !important;
+  color: #ffffff !important;
 }
+
 .table>thead>tr>th {
   background: #000000;
   color: #ffffff;
