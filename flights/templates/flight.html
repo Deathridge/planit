@@ -8,23 +8,23 @@
     	<form id="flightform" class="form-group" action="" method="POST" style="position:relative">
         	{% csrf_token %}        	
         	
-            <div class="col-sm-2">
+            <div class="col-sm-6">
             <p>
             Flight Code:    
             </p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-6">
         	{{ form.FlightCode }}
             </div>   
         	      	
         	       	       	
         	
-            <div class="col-sm-2">
+            <div class="col-sm-6">
             <p>
             Departure Date:     
             </p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-6">
         	{{ form.DepartureDate }}   
             </div>
         	         	
