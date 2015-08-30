@@ -11,7 +11,7 @@
         	defaultView: 'agendaWeek',    		
     		selectable: true,
 			selectHelper: true,
-			height: 650,			
+			height: thisScreenHeight * 0.7,			
 
         	// any other sources...
 
