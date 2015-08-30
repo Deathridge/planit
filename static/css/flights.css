@@ -32,7 +32,7 @@
   .flights {
     margin-right: auto;    
     float: right;
-    width: 60%;
+    width: 65%;
   }
 
   .flight-form {    
@@ -127,7 +127,7 @@
 
 .form-control {
   text-align: center;
-  
+
 }
 
 .datepicker {
