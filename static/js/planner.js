@@ -2,6 +2,7 @@
    
 
     $(document).ready(function() {
+    	viewScreenSize();
     	//page is ready resize calendar
     	
     // page is now ready, initialize the calendar...
@@ -11,7 +12,7 @@
         	defaultView: 'agendaWeek',    		
     		selectable: true,
 			selectHelper: true,
-			viewScreenSize(),
+
 			height: thisScreenHeight * 0.7,			
 
         	// any other sources...
