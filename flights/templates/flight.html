@@ -7,7 +7,7 @@
 	
     	<form id="flightform" class="form-group" action="" method="POST" style="position:relative">
         	{% csrf_token %}        	
-        	<div class="row" id="flightcode">
+        	
             <div class="col-sm-4">
             <p>
             Flight Code:    
@@ -16,9 +16,9 @@
             <div class="col-sm-4">
         	{{ form.FlightCode }}
             </div>   
-        	</div>        	
+        	      	
         	       	       	
-        	<div class="row" id="departuredate">
+        	
             <div class="col-sm-4">
             <p>
             Departure Date:     
@@ -27,7 +27,7 @@
             <div class="col-sm-4">
         	{{ form.DepartureDate }}   
             </div>
-        	</div>         	
+        	         	
             <button type="submit" class="btn btn-primary btn-large" name = "Add" value ="Add" style="position:relative" >Add</button>
         	<div id="message-alert">
         	&nbsp
