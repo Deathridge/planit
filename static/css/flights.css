@@ -28,7 +28,7 @@
   margin: 0;
   }
    
-
+/*
   .flights {
     margin-right: auto;    
     float: right;
@@ -39,7 +39,7 @@
     float: left;
     width: 30%;   
   }
-
+*/
   .footer {
     position: fixed;
     bottom: 20px;
@@ -127,7 +127,7 @@
 
 .form-control {
   text-align: center;
-  width: 100%; 
+
 }
 
 .datepicker {
