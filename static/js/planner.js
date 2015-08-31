@@ -97,9 +97,9 @@
     	})
 		
 		
-		$('.fc-content').draggable();
-		$('.fc-content').selectable();
-		$('.fc-content').sortable();
+		$('.fc-event-container').draggable();
+		$('.fc-event-container').selectable();
+		$('.fc-event-container').sortable();
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
     	else $('#calendar').fullCalendar('changeView', 'agendaWeek');
