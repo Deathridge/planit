@@ -81,6 +81,7 @@
 
 			eventRender: function(event, element) {				
     		    element.qtip({
+    		   	overwrite: true,
     		    content: event.description ,    
     		    position: {	
     		    my: 'bottom left',
