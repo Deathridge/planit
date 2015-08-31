@@ -80,7 +80,9 @@
 			editable: true,	
 
 			eventRender: function(event, element) {
-
+				element.draggable();
+				element.selectable();
+				element.sortable();				
     		    element.qtip({
     		    content: event.description ,    
     		    position: {	
@@ -97,9 +99,7 @@
     	})
 		
 		
-		$('#calendar').draggable();
-		$('#calendar').selectable();
-		$('#calendar').sortable();
+		
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
     	else $('#calendar').fullCalendar('changeView', 'agendaWeek');
