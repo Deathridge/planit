@@ -80,6 +80,7 @@
 			editable: true,	
 
 			eventRender: function(event, element) {
+				element.addTouch();
     		    element.qtip({
     		    content: event.description ,    
     		    position: {	
@@ -96,7 +97,7 @@
     	})
 		
 
-    	$('#calendar').fullCalendar({addTouch()});    	
+    	$('#calendar').addTouch();    	
 
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
