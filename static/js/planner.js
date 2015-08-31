@@ -97,8 +97,8 @@
         		});
 
         		element.bind('dblclick',function() {
-        			var des = prompt('Event description: ');
-        			event.description = des;
+        			event.description = prompt('Event description: ');
+        			
         		});
 
         		
