@@ -96,7 +96,7 @@
     	})
 		
 
-    	$('#calendar').fullCalendar({addTouch();});    	
+    	$('#calendar').fullCalendar({addTouch()});    	
 
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
