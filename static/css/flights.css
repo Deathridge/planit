@@ -30,12 +30,14 @@
    
 
   .flights {
+    margin-top: 50px;
     margin-right: auto;    
     float: right;
     width: 75%;
   }
 
-  .flight-form {    
+  .flight-form { 
+    margin-top: 50px;   
     float: left;
     width: 20%;   
   }
