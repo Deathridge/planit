@@ -6,7 +6,8 @@
     	//page is ready resize calendar
     	
     // page is now ready, initialize the calendar...
-
+    	$('.ui-draggable').draggable();
+		$('.ui-resizable').resizable();
     	var calendar = $('#calendar').fullCalendar(
     	{
         	defaultView: 'agendaWeek',    		
@@ -95,9 +96,7 @@
     		}
 
     	})
-		
-		$('.ui-draggable').draggable();
-		$('.ui-resizable').resizable();
+				
 		
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
