@@ -96,10 +96,12 @@
             	        	
         		});
 
-        		window.oncontextmenu = function() {
-    				$('#calendar'.fullCalendar('removeEvents', event._id));
-   					return false; /* prevent context menu from popping up */
-				};
+        		element.bind('dblclick',function() {
+        			var des = prompt('Event description: ');
+        			event.description = des;
+        		});
+
+        		
     		},
     		//adds drag and resize to elements on touch devices, needs jquery.ui.touch
     		eventAfterRender: function(event,element) {
