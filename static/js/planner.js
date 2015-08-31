@@ -89,7 +89,10 @@
         		at: 'top right',
         		// at the bottom right of...
         		target: 'mouse'
-        		}   		    
+        		} 
+        		hide: {
+     			   event: 'unfocus'
+    			}  		    
             	        	
         		});
     		},
