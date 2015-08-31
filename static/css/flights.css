@@ -32,12 +32,12 @@
   .flights {
     margin-right: auto;    
     float: right;
-    width: 65%;
+    width: 75%;
   }
 
   .flight-form {    
     float: left;
-    width: 30%;   
+    width: 20%;   
   }
 
   .footer {
