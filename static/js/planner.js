@@ -91,7 +91,7 @@
         		}   		    
             	        	
         		});
-    		}
+    		},
 
     		eventAfterRender: function(event,element) {
     			$(element).draggable();
