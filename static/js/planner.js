@@ -79,9 +79,7 @@
 			
 			editable: true,	
 
-			eventRender: function(event, element) {
-				$(element).draggable();
-				$(element).resizable();		
+			eventRender: function(event, element) {				
     		    element.qtip({
     		    content: event.description ,    
     		    position: {	
@@ -93,6 +91,11 @@
         		}   		    
             	        	
         		});
+    		}
+
+    		eventAfterRender: function(event,element) {
+    			$(element).draggable();
+				$(element).resizable();		
     		}
 
     	})
