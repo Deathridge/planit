@@ -94,8 +94,8 @@
     		},
 
     		eventAfterRender: function(event,element) {
-    			$(element).draggable();
-				$(element).resizable();		
+    			$(element).addTouch();
+					
     		}
 
     	})
