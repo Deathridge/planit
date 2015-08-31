@@ -6,8 +6,7 @@
     	//page is ready resize calendar
     	
     // page is now ready, initialize the calendar...
-    	$('.ui-draggable').draggable();
-		$('.ui-resizable').resizable();
+    	
     	var calendar = $('#calendar').fullCalendar(
     	{
         	defaultView: 'agendaWeek',    		
@@ -81,7 +80,8 @@
 			editable: true,	
 
 			eventRender: function(event, element) {
-						
+				$(element).draggable();
+				$(element).resizable();		
     		    element.qtip({
     		    content: event.description ,    
     		    position: {	
