@@ -175,17 +175,20 @@ p, a {
   color: #ffffff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black 0 -1px black;
   font-style: bold;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 .table>tbody>tr>td {
   color: #ffffff !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black 0 -1px black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .table>thead>tr>th {
   background: #000000;
   color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 
 td,th {
