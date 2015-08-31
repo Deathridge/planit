@@ -97,9 +97,9 @@
     	})
 		
 		
-		$('.fc-event-container').draggable();
-		$('.fc-event-container').selectable();
-		$('.fc-event-container').sortable();
+		$('.fc-time-grid-event>fc-v-event>fc-event>fc-start>fc-end>fc-draggable>fc-resizable>fc-short').draggable();
+		$('.fc-time-grid-event>fc-v-event>fc-event>fc-start>fc-end>fc-draggable>fc-resizable>fc-short').selectable();
+		$('.fc-time-grid-event>fc-v-event>fc-event>fc-start>fc-end>fc-draggable>fc-resizable>fc-short').sortable();
     	viewScreenSize();
     	if (thisScreenWidth < 601) $('#calendar').fullCalendar('changeView', 'agendaDay');
     	else $('#calendar').fullCalendar('changeView', 'agendaWeek');
