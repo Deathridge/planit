@@ -92,7 +92,7 @@
             	        	
         		});
     		},
-
+    		//adds drag and resize to elements on touch devices, needs jquery.ui.touch
     		eventAfterRender: function(event,element) {
     			$(element).addTouch();
 					
