@@ -80,7 +80,7 @@
 			editable: true,	
 
 			eventRender: function(event, element) {
-				element.draggable();
+				event.draggable();
     		    element.qtip({
     		    content: event.description ,    
     		    position: {	
