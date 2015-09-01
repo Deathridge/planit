@@ -203,7 +203,7 @@ body {
   margin-bottom: 0px !important;
 }
 
-#calendar > div.fc-view-container > div > table > tbody > tr > td > div.fc-time-grid-container.fc-scroller > div > div.fc-slats > table > tbody > tr:nth-child(13) > td {
+#calendar > div.fc-view-container > div > table > tbody > tr > td {
   color: #ffffff !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black 0 -1px black;
 
