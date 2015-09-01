@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+	<script src="{% static "js/fullcalendar.min.js" %}" defer="defer"></script>
+    <link href="{% static "css/fullcalendar.min.css" %}" rel="stylesheet" defer="defer"/>
+    <link href="{% static "css/fullcalendar.print.css" %}" rel="stylesheet" media="print" defer="defer"/>
+    <script src="{% static "js/jquery.ui.touch.js" %}" defer="defer"></script>    
+    <script src="{% static "js/viewScreenSize.js" %}" defer="defer"></script>
+    <link href="{% static "css/jquery.qtip.min.css" %}" rel="stylesheet" defer="defer"/>
+    <script src="{% static "js/jquery.qtip.min.js" %}"></script>
+    <script src="{% static "js/planner.js" %}" defer="defer"></script>
 
 <button type="submit" class="btn btn-primary btn-large" id ="Month" style="position:relative" >Month</button>
 <button type="submit" class="btn btn-primary btn-large" id ="agendaweek" style="position:relative" >Agenda Week</button>
