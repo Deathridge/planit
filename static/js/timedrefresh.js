@@ -27,11 +27,11 @@ function loadplanner(){
      $.ajax({ // create an AJAX call...
                 data: $(this).serialize(), // get the form data
                 type: $(this).attr('method'), // GET or POST
-                url: $(this).attr('action'), // the file to call
+                url: '/planner', // the file to call
                 success: function(response) { // on success..
                     
                     $.ajax({
-                        url: $(this).attr('action'),
+                        url: '/planner',
                         success: function(data){
                             var f = document.getElementById('flights-form');
                             f.parentNode.removeChild(f);
