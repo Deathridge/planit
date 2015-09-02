@@ -20,4 +20,31 @@ $(document).ready(function() {
             });
             return false;
         });
+
     });
+
+function loadplanner(){
+     $.ajax({ // create an AJAX call...
+                data: $(this).serialize(), // get the form data
+                type: $(this).attr('method'), // GET or POST
+                url: $(this).attr('action'), // the file to call
+                success: function(response) { // on success..
+                    
+                    $.ajax({
+                        url: $(this).attr('action'),
+                        success: function(data){
+                            var f = document.getElementById('flights-form');
+                            f.parentNode.removeChild(f);
+                            var t = document.getElementById('flights-table');
+                            t.parentNode.removeChild(t);
+
+                            var p = data.getElementById('planner');
+                            document.createElement(p)
+                            
+                        }
+                    })
+
+                }
+            });
+            return false;
+}
