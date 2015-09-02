@@ -11,7 +11,7 @@ import simplejson, json
 from django.views.decorators.csrf import csrf_exempt
 
 def planner(request):
-	return render(request, 'planner.html')
+	return HttpResponse(request, 'planner.html')
 
 def planner_json(request):
 	flights = Flight.objects.all()
