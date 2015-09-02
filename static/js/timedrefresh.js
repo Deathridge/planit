@@ -40,7 +40,7 @@ function loadplanner(){
 
                             var p = data;
                             var planner = document.createElement("DIV");
-                            planner.innerHTML = p;
+                            planner.replaceWith(p);
 
                             
                         }
