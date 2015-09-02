@@ -39,7 +39,7 @@ function loadplanner(){
                             var p = response;
                             var planner = document.createElement("div");
                             planner.innerHTML = p;         
-                            document.body.appendChild(planner);                   
+                            document.getElementById("#row-header").appendChild(planner);                   
                     
                 }
             });
