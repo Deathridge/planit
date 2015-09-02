@@ -12,7 +12,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def planner(request):
-	return HttpResponse(request, 'planner.html')
+	return render(request, 'planner.html')
 
 def planner_json(request):
 	flights = Flight.objects.all()
