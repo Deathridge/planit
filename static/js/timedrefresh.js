@@ -38,7 +38,7 @@ function loadplanner(){
                             var t = document.getElementById('flights-table');
                             t.parentNode.removeChild(t);
 
-                            var p = data.getElementById('planner');
+                            var p = $($.parseHTML(data)).filter("#planner");
                             document.createElement(p)
                             
                         }
