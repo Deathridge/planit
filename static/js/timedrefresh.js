@@ -40,7 +40,8 @@ function loadplanner(){
 
                             var p = data;
                             var planner = document.createElement("DIV");
-                            planner.replaceWith(p);
+                            planner.setAttribute("id", "planner");
+                            $('#planner').replaceWith(p);
 
                             
                         }
