@@ -39,7 +39,9 @@ function loadplanner(){
                             t.parentNode.removeChild(t);
 
                             var p = $($.parseHTML(data)).filter("#planner");
-                            document.createElement(p)
+                            var planner = document.createElement("DIV");
+                            planner.innerHTML = p;
+
                             
                         }
                     })
