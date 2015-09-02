@@ -30,9 +30,7 @@ function loadplanner(){
                 url: '/planner', // the file to call
                 success: function(response) { // on success..
                     
-                    $.ajax({
-                        url: '/planner',
-                        success: function(data){
+                    
                             var f = document.getElementById('flights-form');
                             f.parentNode.removeChild(f);
                             var t = document.getElementById('flights-table');
@@ -40,12 +38,8 @@ function loadplanner(){
 
                             var p = data;
                             var planner = document.createElement('div');
-                            planner.innerHTML = p;
-
-                            
-                        }
-                    })
-
+                            planner.innerHTML = p;                            
+                    
                 }
             });
             return false;
