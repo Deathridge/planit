@@ -38,8 +38,9 @@ function loadplanner(){
 
                             
                             var planner = document.createElement("div");
-                            planner.replaceWith(response);         
-                            document.getElementById("mainrow").appendChild(planner);                   
+                            planner.setAttribute("id", "planner");
+                            document.getElementById("mainrow").appendChild(planner);       
+                            document.getElementById("planner").replaceWith(response);                     
                     
                 }
             });
