@@ -1,6 +1,7 @@
 
 
 $(document).ready(function() {
+        $("head").append($("<link href='/static/css/flights.css' rel='stylesheet'/>"));
         $('#flightform').submit(function() { // catch the form's submit event
             $.ajax({ // create an AJAX call...
                 data: $(this).serialize(), // get the form data
