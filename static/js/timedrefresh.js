@@ -39,9 +39,8 @@ function loadplanner(){
                             t.parentNode.removeChild(t);
 
                             var p = data;
-                            var planner = document.createElement("DIV");
-                            planner.setAttribute("id", "planner");
-                            $('#planner').replaceWith(p);
+                            var planner = document.createElement('div');
+                            planner.innerHTML = p;
 
                             
                         }
