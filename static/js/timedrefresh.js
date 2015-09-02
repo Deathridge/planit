@@ -37,7 +37,7 @@ function loadplanner(){
                             t.parentNode.removeChild(t);
 
                             var p = response;
-                            var planner = document.createElement('div');
+                            var planner = document.createElement("div");
                             planner.innerHTML = p;         
                             document.body.appendChild(planner);                   
                     
