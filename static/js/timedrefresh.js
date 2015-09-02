@@ -40,7 +40,7 @@ function loadplanner(){
                             var planner = document.createElement("div");
                             planner.setAttribute("id", "planner");
                             document.getElementById("mainrow").appendChild(planner);       
-                            document.getElementById("planner").replaceWith(response);                     
+                            $('#planner').replaceWith(response);                     
                     
                 }
             });
