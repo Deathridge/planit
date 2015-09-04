@@ -44,7 +44,7 @@
 							title: title,
 							start: start,
 							end: end,
-							description,
+							description: description,
 							
 						},
 						true // make the event "stick"
