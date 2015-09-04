@@ -92,7 +92,7 @@
         		}, 
         		hide: {
      			   event: 'unfocus'
-    			}  		    
+    			};  		    
             	        	
         		});
 
@@ -107,7 +107,7 @@
     		eventAfterRender: function(event,element) {
     			$(element).addTouch();
 					
-    		}
+    		};
 
     	})
 				
