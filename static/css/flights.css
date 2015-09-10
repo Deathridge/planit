@@ -19,7 +19,7 @@
   }
   
   html, body { 
-  background: url(../images/fjord-min.jpg) no-repeat center center fixed; 
+  background: url(../images/fjord-progressive.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,7 +71,7 @@
   }
   
   html, body { 
-  background: url(../images/fjord-min.jpg) no-repeat center center fixed; 
+  background: url(../images/fjord-progressive.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
