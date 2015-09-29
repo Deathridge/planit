@@ -34,9 +34,9 @@ def flights_main(request):
 				flight = Flight(FlightCode=FlightCode,DepartureDate=DepartureDate,DepartureTime=DepartureTime,ArrivalTime=ArrivalTime, DepartureLocation=DepartureLocation,ArrivalLocation=ArrivalLocation)
 				flight.save()
 			elif (data[6] == 0):
-				messages.add_message(request, messages.ERROR, 'Invalid FlightCode')
+				return HttpResponse('No flight data for provided date')
 			elif (data[6] == 1):
-				messages.add_message(request, messages.ERROR, 'No flight data for provided date')
+				return HttpResponse('Invalid FlightCode')
 
 			
 

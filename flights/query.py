@@ -12,13 +12,14 @@ def scrapeflight(flightcode, date):
     g = geocoders.GoogleV3()
     query = flightcode.replace(" ", "")
     response = opener.open( 'http://www.flightradar24.com/data/flights/' + query ).read()
-    datefound = 0
+    dateisvalid = 0
     page = BeautifulSoup(response,'html.parser')
     
     for link in page.find_all('tr'):
         info = link.get('data-date')
+        print info, date
         if (info==date):
-            datefound = 1
+            dateisvalid = 1
             Latfrom = link.get('data-lat-from')
             Lonfrom = link.get('data-lon-from')
             LatTo = link.get('data-lat-to')
@@ -55,23 +56,32 @@ def scrapeflight(flightcode, date):
                     ArrivalTime = ArrivalTime.replace(hour = timeza,minute = ArrivalTime.minute)
 
                 t=t+1
-
+    print info is None and dateisvalid == 0
     if ('DepartureLocation' not in locals()):
         Statuscode = 0
         DepartureLocation = "Invalid"
         ArrivalLocation = "Invalid"
         DepartureTime = "00:00"
         ArrivalTime = "00:00"
+       
+        if (info is None and dateisvalid == 0):
+            Statuscode = 1
+            print Statuscode
+            DepartureLocation = "Invalid"
+            ArrivalLocation = "Invalid"
+            DepartureTime = "00:00"
+            ArrivalTime = "00:00"
+            return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime, Statuscode]
+
+        return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime, Statuscode]
+          
     
     else:
         Statuscode = 2
+        return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime, Statuscode]
 
-    if (datefound == 0):
-        Statuscode = 1
-        DepartureTime = "00:00"
-        ArrivalTime = "00:00"
-
-    return [flightcode, date, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime, Statuscode]
+    print Statuscode
+   
 
 
 

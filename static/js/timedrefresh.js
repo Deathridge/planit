@@ -1,14 +1,15 @@
 
 
 $(document).ready(function() {
-        $("head").append($("<link href='/static/css/flights.css' rel='stylesheet'/>"));
+        
         $('#flightform').submit(function() { // catch the form's submit event
             $.ajax({ // create an AJAX call...
                 data: $(this).serialize(), // get the form data
                 type: $(this).attr('method'), // GET or POST
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
-                	
+                	$('#error-messages').empty();
+                    $('#error-messages').append(response);
                     $.ajax({
     					url: 'refresh',
     					success: function(data){
