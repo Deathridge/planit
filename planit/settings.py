@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'planit.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-#import dj_database_url
+import dj_database_url
 
 DATABASES = {
     'default': {
@@ -75,9 +75,9 @@ DATABASES = {
     }
 }
 
-#DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config()
 # Enable Connection Pooling
-#DATABASES['default']['ENGINE'] = 'django_postgrespool'
+DATABASES['default']['ENGINE'] = 'django_postgrespool'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,6 +128,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 print STATICFILES_DIRS
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO' ,'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO' ,'https')
